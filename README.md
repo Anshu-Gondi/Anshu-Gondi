@@ -22,7 +22,7 @@ Skilled in MERN stack, Django, PyTorch, Data Science, and Cloud Deployment.
 ### 💰 FinTally (Money Tracker App + AI Chatbot) – React + Node.js + Django + MongoDB
 - Full-featured personal finance tracker  
 - **Features:** Recurring transactions, receipts upload + PDF export, category tagging, date-picker UI, pagination & infinite scroll  
-- **AI Chatbot:** Built-in finance assistant powered by FastAPI + TinyLLaMA, FAISS + Sentence Transformers for vector-based knowledge retrieval, MongoDB for chat history storage, trained on finance/business/investment knowledge  
+- **AI Chatbot:** Built-in finance assistant powered by FastAPI + TinyLLaMA, FAISS + Sentence Transformers for vector-based knowledge retrieval, MongoDB for chat history storage, trained on finance/bu[...]
 - **Insights Engine:** Django backend provides daily/weekly/monthly summaries, category-based insights, and lifetime analysis  
 - **Tech:** React + Bulma + Recharts | Node.js + Express + JWT | Django + MongoDB  
 
@@ -63,8 +63,8 @@ Skilled in MERN stack, Django, PyTorch, Data Science, and Cloud Deployment.
 ## 📊 GitHub Stats
 
 <p align="center">  
-  <img src="https://github-readme-stats.vercel.app/api?username=ag-YouTube&show_icons=true&theme=radical" height="160" />  
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ag-YouTube&layout=compact&theme=radical" height="160" />  
+  <img src="https://github-readme-stats.vercel.app/api?username=Anshu-Gondi&show_icons=true&theme=radical" height="160" />  
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anshu-Gondi&layout=compact&theme=radical" height="160" />  
 </p>    
 
 ---
@@ -76,6 +76,21 @@ Skilled in MERN stack, Django, PyTorch, Data Science, and Cloud Deployment.
 ---
 
 ✨ Always building, always learning 🚀
+
+<!--
+**Anshu-Gondi/Anshu-Gondi** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+
+Here are some ideas to get you started:
+
+- 🔭 I’m currently working on ...
+- 🌱 I’m currently learning ...
+- 👯 I’m looking to collaborate on ...
+- 🤔 I’m looking for help with ...
+- 💬 Ask me about ...
+- 📫 How to reach me: ...
+- 😄 Pronouns: ...
+- ⚡ Fun fact: ...
+-->
 
 <!--
 **Anshu-Gondi/Anshu-Gondi** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
