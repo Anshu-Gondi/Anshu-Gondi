@@ -29,20 +29,44 @@ Skilled in MERN stack, Django, PyTorch, Data Science, and Cloud Deployment.
 ---
 
 ### 📂 Taskflow-Ngnode – Advanced Task Management & AI Scheduler
-- Intelligent task planner & workflow manager  
-- **AI:** Powered by PyTorch with ML-based scheduling  
-- Pretrained model storage in MongoDB Atlas with auto-load fallback  
-- Supports dynamic rules + machine learning decisions  
+
+* **Purpose:** Intelligent task planner & workflow manager with support for **solo** (personal) and **team-based** task management
+* **AI Scheduler:**
+
+  * Built with PyTorch, combining **rule-based regulations** + **ML-driven decisions**
+  * Supports **supervised** and **unsupervised** scheduling
+  * Models used: `MiniBatchKMeans`, `IsolationForest` (unsupervised) + PyTorch supervised learning
+  * Optimized for **CPU-friendly execution** (2 main threads for ML tasks)
+* **Team Collaboration (Role System):**
+
+  * **Viewer:** Can **invite members** and **view activities**
+  * **Editor:** All viewer powers **+ full CRUD** on lists and tasks, with **AI Scheduler integration**
+  * **Admin:** Highest authority — can **promote/demote members, remove members,** and manage **team hierarchy**
+  * Integrated **email notification system** powered by **Resend API** for team updates and role changes
+* **Inspirations:**
+
+  * Team joining system inspired by **Among Us**
+  * Role structure & progression mechanics inspired by **Clash of Clans**
+* **Features:**
+
+  * Pretrained PyTorch models stored with **auto-load fallback**
+  * Dynamic rules + ML scheduling for adaptive task management
+  * Combines personal productivity + scalable team workflows
 
 ---
 
-### 📈 Revenue-AI – Django-based Financial Insights & Forecasting
-- **Backend:** Django + DRF with PyTorch models  
-- Provides daily/weekly/monthly summaries, category analytics, and lifetime max/min transactions  
-- **Databases:** MongoDB Atlas + PostgreSQL  
-- Integrated with Node.js proxy backend for unified API access  
-- **Authentication:** JWT + OAuth2.0  
-- Deployment-ready for Render / Railway / Vercel  
+### 📈 Revenue-AI – Django-based Financial Insights, Forecasting & EDA
+
+* **Backend:** Django + DRF with PyTorch integration
+* Full **EDA & data preprocessing pipeline** with interactive options for model selection
+* Supports multiple ML models: `LinearRegression`, `DecisionTreeRegressor`, `XGBRegressor`, `LGBMRegressor`, `RandomForestRegressor` (CPU-friendly, optimized for 2 main threads + 5 parallel tasks)
+* **User choice:** Select which regression model to apply for forecasting
+* **Export options:** Download results in **JSON, CSV, Excel**, or image formats
+* **Frontend:** Vanilla TypeScript (Vite)
+* **Database:** Neon.tech PostgreSQL
+* Integrated with Node.js proxy backend for unified API access
+* **Authentication:** JWT + OAuth2.0
+* Deployment-ready for Render / Railway / Vercel  
 
 ---
 
