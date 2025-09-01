@@ -107,15 +107,22 @@ Skilled in MERN stack, Django, PyTorch, Data Science, and Cloud Deployment.
 
 ## 📊 Data Science Projects
 
-A collection of hands-on data science work including dashboards, modeling, and exploratory analysis:
+My data science journey is captured across just **five key projects**, showing growth from simple exploration to advanced, production-style workflows:
 
-- [**Data-Science-Project-Alternate**](https://github.com/Anshu-Gondi/Data-Science-Project-Alternate) — Jupyter Notebook showcasing end-to-end data analysis workflows and project iteration.
-- [**Data-Science-Projects**](https://github.com/Anshu-Gondi/Data-Science-Projects) — A curated set of Python-based data science projects covering various real-world scenarios.
+* [**Data-Science-Project-Alternate**](https://github.com/Anshu-Gondi/Data-Science-Project-Alternate)
+  A **beginner-level project** — mostly Jupyter Notebooks — focusing on exploratory data analysis, basic ML, and visualization.
 
-Plus:
-- Financial analytics dashboards built with Python, Pandas, and Matplotlib  
-- Predictive modeling pipelines using PyTorch  
-- Business insights visualizations and statistical storytelling
+* [**Data-Science-Projects**](https://github.com/Anshu-Gondi/Data-Science-Projects)
+  A **transition project** — hybrid of Jupyter Notebooks + Python scripts — experimenting with structure, reusable functions, and small ML models.
+
+* Later projects build on these foundations, evolving toward **company-style structures**, with:
+
+  * Modularized Python scripts + configs
+  * Clear separation of data, preprocessing, modeling, and evaluation
+  * Pipelines for supervised & unsupervised ML
+  * Documentation and reproducibility improvements
+
+✨ Collectively, these five projects trace my path from experimenting in notebooks → hybrid workflows → **professional, production-ready pipelines**.
 
 ---
 
