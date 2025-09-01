@@ -106,9 +106,16 @@ Skilled in MERN stack, Django, PyTorch, Data Science, and Cloud Deployment.
 ---
 
 ## 📊 Data Science Projects
-- Financial analytics dashboards (Python + Pandas + Matplotlib)  
-- Predictive modeling with PyTorch  
-- Business insights + visualization  
+
+A collection of hands-on data science work including dashboards, modeling, and exploratory analysis:
+
+- [**Data-Science-Project-Alternate**](https://github.com/Anshu-Gondi/Data-Science-Project-Alternate) — Jupyter Notebook showcasing end-to-end data analysis workflows and project iteration.
+- [**Data-Science-Projects**](https://github.com/Anshu-Gondi/Data-Science-Projects) — A curated set of Python-based data science projects covering various real-world scenarios.
+
+Plus:
+- Financial analytics dashboards built with Python, Pandas, and Matplotlib  
+- Predictive modeling pipelines using PyTorch  
+- Business insights visualizations and statistical storytelling
 
 ---
 
