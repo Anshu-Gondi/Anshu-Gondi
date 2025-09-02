@@ -65,28 +65,57 @@ Skilled in MERN stack, Django, PyTorch, Data Science, and Cloud Deployment.
 
 ### 📂 Taskflow-Ngnode – Advanced Task Management & AI Scheduler
 
-- **Purpose:** Intelligent task planner & workflow manager with support for **solo** (personal) and **team-based** task management  
+#### 🎯 Purpose  
+Intelligent task planner & workflow manager with support for **solo** (personal) and **team-based** task management.  
 
-- **AI Scheduler:**  
-  - Built with PyTorch, combining **rule-based regulations** + **ML-driven decisions**  
-  - Supports **supervised** and **unsupervised** scheduling  
-  - Models used: `MiniBatchKMeans`, `IsolationForest` (unsupervised) + PyTorch supervised learning  
-  - Optimized for **CPU-friendly execution** (2 main threads for ML tasks)  
+---
 
-- **Team Collaboration (Role System):**  
-  - **Viewer:** Can **invite members** and **view activities**  
-  - **Editor:** All viewer powers **+ full CRUD** on lists and tasks, with **AI Scheduler integration**  
-  - **Admin:** Highest authority — can **promote/demote members, remove members,** and manage **team hierarchy**  
-  - Integrated **email notification system** powered by **Resend API** for team updates and role changes  
+#### 🤖 AI Scheduler  
+- Built with **PyTorch**, combining **rule-based regulations** + **ML-driven decisions**  
+- Supports both **supervised** and **unsupervised** scheduling  
+- Models used:  
+  - `MiniBatchKMeans`  
+  - `IsolationForest` (unsupervised)  
+  - PyTorch **supervised learning** models  
+- Optimized for **CPU-friendly execution** (runs on **2 main threads** for ML tasks)  
 
-- **Inspirations:**  
-  - Team joining system inspired by **Among Us**  
-  - Role structure & progression mechanics inspired by **Clash of Clans**  
+---
 
-- **Features:**  
-  - Pretrained PyTorch models stored with **auto-load fallback**  
-  - Dynamic rules + ML scheduling for adaptive task management  
-  - Combines personal productivity + scalable team workflows  
+#### 👥 Team Collaboration (Role System)  
+- **Viewer**:  
+  - Can **invite members**  
+  - Can **view activities**  
+- **Editor**:  
+  - All **Viewer powers**  
+  - Full **CRUD** on lists and tasks  
+  - **AI Scheduler integration**  
+- **Admin**:  
+  - Highest authority  
+  - Can **promote/demote members**  
+  - Can **remove members**  
+  - Manages **team hierarchy**  
+
+✅ Integrated **email notification system** powered by **Resend API** for team updates and role changes.  
+
+---
+
+#### 🎮 Inspirations  
+- **Among Us** → Team joining system  
+- **Clash of Clans** → Role structure & progression mechanics  
+
+---
+
+#### 🚀 Features  
+- Pretrained PyTorch models stored with **auto-load fallback**  
+- Dynamic **rules + ML scheduling** for adaptive task management  
+- Combines **personal productivity + scalable team workflows**  
+
+---
+
+#### 🛠️ Tech Stack  
+- **Frontend** → Angular  
+- **Backend** → Node.js  
+- **AI Scheduler Service** → FastAPI (connected to Node.js & frontend)  
 
 ---
 
