@@ -1,9 +1,17 @@
 # 👋 Hi, I'm Anshu Gondi
 
+🎓 **1st Semester B.Tech Student (India)**  
 💻 **Full-Stack Developer** | 🔬 **Data Science & AI Enthusiast** | 🚀 **Open Source Builder**
 
-I’m passionate about creating AI-powered financial tools, task automation systems, and intelligent web apps.  
-Skilled in MERN stack, Django, PyTorch, Data Science, and Cloud Deployment.
+I’m a first-year engineering student exploring the world of **AI, data science, and full-stack development**.  
+Passionate about building **AI-powered financial tools, task automation systems, and intelligent web apps**.  
+
+Currently experimenting with:  
+- MERN stack + Django + Angular + FastAPI  
+- Data Science & ML using PyTorch, Scikit-learn, and modern pipelines  
+- Cloud deployment & scalable app design  
+
+✨ Even as a beginner in college, I’ve started working on projects that combine **real-world applications + AI integration**, constantly leveling up from notebooks → hybrid workflows → production-ready systems.
 
 ---
 
