@@ -19,6 +19,15 @@ From **AI-powered financial tools** to **intelligent web apps**, I thrive at the
 
 ---
 
+## 🚀 New Milestone: C Language Conquered!
+
+In just **11 days**, I dove into C language and built projects ranging from beginner to advanced level!  
+Most topics are mastered, with just a few left to explore.  
+Check out my progress and projects:  
+- [C-Language-Project-beginner-to-advanced-level](https://github.com/Anshu-Gondi/C-Language-Project-beginner-to-advanced-level)
+
+---
+
 ## 🛠️ Tech Stack
 
 **Languages:**  
@@ -28,6 +37,7 @@ From **AI-powered financial tools** to **intelligent web apps**, I thrive at the
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="40" height="40" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="40" height="40" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="40" height="40" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="40" height="40" />
 </p>
 
 **Frameworks & Libraries:**  
