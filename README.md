@@ -3,19 +3,23 @@
 🎓 **1st Semester B.Tech Student (India)**  
 💻 **Full-Stack Developer** | 🔬 **Data Science & AI Enthusiast** | 🚀 **Open Source Builder**
 
-I’m a first-year engineering student exploring the world of **AI, data science, and full-stack development**.  
-Passionate about building **AI-powered financial tools, task automation systems, and intelligent web apps**.  
+---
 
-Currently experimenting with:  
-- MERN stack + Django + Angular + FastAPI  
-- Data Science & ML using PyTorch, Scikit-learn, and modern pipelines  
-- Cloud deployment & scalable app design  
+> **Driven by curiosity. Obsessed with innovation. Building the future, one project at a time.**
 
-✨ Even as a beginner in college, I’ve started working on projects that combine **real-world applications + AI integration**, constantly leveling up from notebooks → hybrid workflows → production-ready systems.
+I’m a passionate first-year engineering student on a mission to turn ideas into impact with code.  
+From **AI-powered financial tools** to **intelligent web apps**, I thrive at the intersection of creativity and technology.
+
+**Currently deep-diving into:**  
+- Full-stack adventures: MERN stack, Django, Angular, FastAPI  
+- Data Science & ML: PyTorch, Scikit-learn, pipelines that scale  
+- Cloud magic: Deployments, scalability, and modern app architecture  
+
+✨ Even as a college beginner, I never settle—my journey is about leveling up from notebooks → hybrid workflows → production-ready systems.
 
 ---
 
-## 🛠️ Tech Stack  
+## 🛠️ Tech Stack
 
 **Languages:**  
 <p>
@@ -63,102 +67,79 @@ Currently experimenting with:
 ## 🚀 Projects Highlight
 
 ### 💰 FinTally (Money Tracker App + AI Chatbot) – React + Node.js + Django + MongoDB
-- Full-featured personal finance tracker  
-- **Features:** Recurring transactions, receipts upload + PDF export, category tagging, date-picker UI, pagination & infinite scroll  
-- **AI Chatbot:** Built-in finance assistant powered by FastAPI + TinyLLaMA, FAISS + Sentence Transformers for vector-based knowledge retrieval, MongoDB for chat history storage, trained on finance/bu[...]
-- **Insights Engine:** Django backend provides daily/weekly/monthly summaries, category-based insights, and lifetime analysis  
-- **Tech:** React + Bulma + Recharts | Node.js + Express + JWT | Django + MongoDB  
+- **Empowering personal finance with smart features:**
+  - Recurring transactions, receipts upload, PDF export, category tagging, date-picker UI
+  - Pagination & infinite scroll for seamless data viewing
+- **AI Chatbot:** Finance assistant built with FastAPI + TinyLLaMA, vector search using FAISS + Sentence Transformers, MongoDB for chat history, trained on finance/business docs
+- **Insights Engine:** Django backend delivers daily/weekly/monthly summaries, category-based insights, lifetime analysis
+- **Tech:** React + Bulma + Recharts | Node.js + Express + JWT | Django + MongoDB
 
 ---
 
 ### 📂 Taskflow-Ngnode – Advanced Task Management & AI Scheduler
 
 #### 🎯 Purpose  
-Intelligent task planner & workflow manager with support for **solo** (personal) and **team-based** task management.  
-
----
+A next-gen planner—automating your day, whether solo or as a team.
 
 #### 🤖 AI Scheduler  
-- Built with **PyTorch**, combining **rule-based regulations** + **ML-driven decisions**  
-- Supports both **supervised** and **unsupervised** scheduling  
-- Models used:  
-  - `MiniBatchKMeans`  
-  - `IsolationForest` (unsupervised)  
-  - PyTorch **supervised learning** models  
-- Optimized for **CPU-friendly execution** (runs on **2 main threads** for ML tasks)  
-
----
+- PyTorch-powered, blends rule-based and machine learning decisions
+- Supports both supervised and unsupervised scheduling
+- Models: MiniBatchKMeans, IsolationForest, custom PyTorch models
+- Runs efficiently (2 threads for ML tasks), so it’s both powerful and practical
 
 #### 👥 Team Collaboration (Role System)  
-- **Viewer**:  
-  - Can **invite members**  
-  - Can **view activities**  
-- **Editor**:  
-  - All **Viewer powers**  
-  - Full **CRUD** on lists and tasks  
-  - **AI Scheduler integration**  
-- **Admin**:  
-  - Highest authority  
-  - Can **promote/demote members**  
-  - Can **remove members**  
-  - Manages **team hierarchy**  
+- **Viewer:** Invite members, view activities
+- **Editor:** All Viewer powers plus full CRUD on lists/tasks and AI Scheduler integration
+- **Admin:** Top authority—promote/demote/remove members, manage team hierarchy
 
-✅ Integrated **email notification system** powered by **Resend API** for team updates and role changes.  
-
----
+✅ Email notifications for team updates via Resend API
 
 #### 🎮 Inspirations  
-- **Among Us** → Team joining system  
-- **Clash of Clans** → Role structure & progression mechanics  
-
----
+- **Among Us:** Team joining system
+- **Clash of Clans:** Role structure & progression
 
 #### 🚀 Features  
-- Pretrained PyTorch models stored with **auto-load fallback**  
-- Dynamic **rules + ML scheduling** for adaptive task management  
-- Combines **personal productivity + scalable team workflows**  
-
----
+- Auto-load fallback for pretrained PyTorch models
+- Dynamic rules + ML scheduling for adaptive task management
+- Scales from personal productivity to team-wide workflow
 
 #### 🛠️ Tech Stack  
-- **Frontend** → Angular  
-- **Backend** → Node.js  
-- **AI Scheduler Service** → FastAPI (connected to Node.js & frontend)  
+- **Frontend:** Angular  
+- **Backend:** Node.js  
+- **AI Scheduler Service:** FastAPI (connected to Node.js & frontend)
 
 ---
 
 ### 📈 Revenue-AI – Django-based Financial Insights, Forecasting & EDA
 
-* **Backend:** Django + DRF with PyTorch integration
-* Full **EDA & data preprocessing pipeline** with interactive options for model selection
-* Supports multiple ML models: `LinearRegression`, `DecisionTreeRegressor`, `XGBRegressor`, `LGBMRegressor`, `RandomForestRegressor` (CPU-friendly, optimized for 2 main threads + 5 parallel tasks)
-* **User choice:** Select which regression model to apply for forecasting
-* **Export options:** Download results in **JSON, CSV, Excel**, or image formats
-* **Frontend:** Vanilla TypeScript (Vite)
-* **Database:** Neon.tech PostgreSQL
-* Integrated with Node.js proxy backend for unified API access
-* **Authentication:** JWT + OAuth2.0
-* Deployment-ready for Render / Railway / Vercel  
+- Django + DRF backend integrates PyTorch for ML
+- Full EDA & data preprocessing pipeline, interactive model selection
+- ML models: LinearRegression, DecisionTreeRegressor, XGBRegressor, LGBMRegressor, RandomForestRegressor (optimized for parallel CPU tasks)
+- Choose your regression model for forecasting
+- Export results as JSON, CSV, Excel, or image
+- Frontend: Vanilla TypeScript (Vite)
+- Database: Neon.tech PostgreSQL
+- Unified API via Node.js proxy backend
+- Auth: JWT + OAuth2.0
+- Deployable on Render / Railway / Vercel
 
 ---
 
 ## 📊 Data Science Projects
 
-My data science journey is captured across just **five key projects**, showing growth from simple exploration to advanced, production-style workflows:
+From first steps to pro pipelines—my data science journey in five projects:
 
--  [**Data-Science-Projects**](https://github.com/Anshu-Gondi/Data-Science-Projects)  
-  A **beginner-level project** — mostly Jupyter Notebooks — focusing on exploratory data analysis, basic ML, and visualization.
+- [**Data-Science-Projects**](https://github.com/Anshu-Gondi/Data-Science-Projects)  
+  *Beginner level*: Jupyter Notebooks, exploratory analysis, simple ML, visualization
+- [**Data-Science-Project-Alternate**](https://github.com/Anshu-Gondi/Data-Science-Project-Alternate)  
+  *Transition*: Hybrid notebooks/scripts, reusable functions, small ML models
+- Next projects go company-style:
+  - Modular Python scripts + configs
+  - Clear split: data, preprocessing, modeling, evaluation
+  - Pipelines for supervised/unsupervised ML
+  - Stronger docs & reproducibility
 
-- [**Data-Science-Project-Alternate**](https://github.com/Anshu-Gondi/Data-Science-Project-Alternate)
-  A **transition project** — hybrid of Jupyter Notebooks + Python scripts — experimenting with structure, reusable functions, and small ML models.
-
-- Later projects build on these foundations, evolving toward **company-style structures**, with:  
-  - Modularized Python scripts + configs  
-  - Clear separation of data, preprocessing, modeling, and evaluation  
-  - Pipelines for supervised & unsupervised ML  
-  - Documentation and reproducibility improvements  
-
-✨ Collectively, these five projects trace my path from experimenting in notebooks → hybrid workflows → **professional, production-ready pipelines**.
+✨ These projects chart my growth: notebooks → hybrid workflows → production-grade pipelines.
 
 ---
 
@@ -171,35 +152,20 @@ My data science journey is captured across just **five key projects**, showing g
 
 ## 📊 GitHub Stats
 
-<p align="center">  
-  <img src="https://github-readme-stats.vercel.app/api?username=Anshu-Gondi&show_icons=true&theme=radical" height="160" />  
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anshu-Gondi&layout=compact&theme=radical" height="160" />  
-</p>    
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Anshu-Gondi&show_icons=true&theme=radical" height="160" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anshu-Gondi&layout=compact&theme=radical" height="160" />
+</p>
 
 ---
 
 ## 🌐 Connect with Me
-- 📺 YouTube: [@ag_youtube](https://youtube.com/@ag_youtube)  
-- 📧 Email: agondi982@gmail.com  
+- 📺 YouTube: [@ag_youtube](https://youtube.com/@ag_youtube)
+- 📧 Email: agondi982@gmail.com
 
 ---
 
 ✨ Always building, always learning 🚀
-
-<!--
-**Anshu-Gondi/Anshu-Gondi** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
 
 <!--
 **Anshu-Gondi/Anshu-Gondi** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
