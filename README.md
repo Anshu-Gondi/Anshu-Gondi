@@ -80,7 +80,8 @@ Check out my progress and projects:
 - **Empowering personal finance with smart features:**
   - Recurring transactions, receipts upload, PDF export, category tagging, date-picker UI
   - Pagination & infinite scroll for seamless data viewing
-- **AI Chatbot:** Finance assistant built with FastAPI + TinyLLaMA, vector search using FAISS + Sentence Transformers, MongoDB for chat history, trained on finance/business docs
+- **AI Chatbot:** _Under Construction_  
+  _My device is not compatible to run the AI Chatbot feature at the moment. All other FinTally features are fully integrated and working successfully!_
 - **Insights Engine:** Django backend delivers daily/weekly/monthly summaries, category-based insights, lifetime analysis
 - **Tech:** React + Bulma + Recharts | Node.js + Express + JWT | Django + MongoDB
 
