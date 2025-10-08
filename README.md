@@ -1,163 +1,124 @@
-# 👋 Hi, I'm Anshu Gondi
+# 👋 Hi, I'm **Anshu Gondi**
+
+> 💼 **Open to internships or remote collaborations – focused on full-stack + AI systems.**
 
 🎓 **1st Semester B.Tech Student (India)**  
-💻 **Full-Stack Developer** | 🔬 **Data Science & AI Enthusiast** | 🚀 **Open Source Builder**
+💻 **Full-Stack Developer** | 🤖 **AI & Data Science Enthusiast** | 🌍 **Open Source Builder**
 
 ---
 
-> **Driven by curiosity. Obsessed with innovation. Building the future, one project at a time.**
+> “Driven by curiosity. Obsessed with innovation. Building the future—one project at a time.”
 
-I’m a passionate first-year engineering student on a mission to turn ideas into impact with code.  
-From **AI-powered financial tools** to **intelligent web apps**, I thrive at the intersection of creativity and technology.
-
-**Currently deep-diving into:**  
-- Full-stack adventures: MERN stack, Django, Angular, FastAPI  
-- Data Science & ML: PyTorch, Scikit-learn, pipelines that scale  
-- Cloud magic: Deployments, scalability, and modern app architecture  
-
-✨ Even as a college beginner, I never settle—my journey is about leveling up from notebooks → hybrid workflows → production-ready systems.
+I’m a passionate engineering student turning ideas into impact through code.  
+From **AI-powered finance systems** to **intelligent productivity tools**, I love building at the intersection of **creativity, data, and engineering**.
 
 ---
 
-## 🚀 New Milestone: C Language Conquered!
+## 🚀 Currently Exploring
 
-In just **11 days**, I dove into C language and built projects ranging from beginner to advanced level!  
-Most topics are mastered, with just a few left to explore.  
-Check out my progress and projects:  
-- [C-Language-Project-beginner-to-advanced-level](https://github.com/Anshu-Gondi/C-Language-Project-beginner-to-advanced-level)
+* **Full-Stack Development:** MERN stack · Django · Angular · FastAPI
+* **AI / ML Systems:** PyTorch · Scikit-learn · Scalable ML pipelines
+* **Cloud & Deployments:** Docker · Render · Vercel · Railway
+* **Systems Thinking:** Hybrid backends · service orchestration · Rust extensions *(in progress)*
+
+💡 My learning path: notebooks → hybrid workflows → production-ready systems.
 
 ---
 
-## 🛠️ Tech Stack
+## 🧠 New Milestone: C Language Conquered!
+
+In just **11 days**, I explored and built multiple projects in **C**, mastering core concepts from beginner to advanced level.  
+Check out the repo 👇  
+🔗 [C-Language-Project-beginner-to-advanced-level](https://github.com/Anshu-Gondi/C-Language-Project-beginner-to-advanced-level)
+
+---
+
+## 🧰 Tech Stack
 
 **Languages:**  
-<p>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40" height="40" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" height="40" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="40" height="40" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="40" height="40" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="40" height="40" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="40" height="40" />
-</p>
+Python · JavaScript · TypeScript · C · SQL · PostgreSQL · MySQL
 
 **Frameworks & Libraries:**  
-<p>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" width="40" height="40" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="40" height="40" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="40" height="40" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40" height="40" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" width="40" height="40" />
-</p>
+Django · Node.js · Express · React · Angular · FastAPI
 
 **Databases:**  
-<p>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" width="40" height="40" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="40" height="40" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="40" height="40" />
-</p>
+MongoDB · PostgreSQL · MySQL
 
 **AI / ML:**  
-<p>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" width="40" height="40" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" width="40" height="40" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" width="40" height="40" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" width="40" height="40" />
-</p>
+PyTorch · NumPy · Pandas · Scikit-learn
 
 **Tools & Platforms:**  
-<p>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="40" height="40" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="40" height="40" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" width="40" height="40" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" width="40" height="40" />
-</p>
+Docker · Git · Google Cloud · Render · Vercel
 
 ---
 
-## 🚀 Projects Highlight
+## 🌟 Featured Projects
 
-### 💰 FinTally (Money Tracker App + AI Chatbot) – React + Node.js + Django + MongoDB
-- **Empowering personal finance with smart features:**
-  - Recurring transactions, receipts upload, PDF export, category tagging, date-picker UI
-  - Pagination & infinite scroll for seamless data viewing
-- **AI Chatbot:** _Under Construction_  
-  _My device is not compatible to run the AI Chatbot feature at the moment. All other FinTally features are fully integrated and working successfully!_
-- **Insights Engine:** Django backend delivers daily/weekly/monthly summaries, category-based insights, lifetime analysis
-- **Tech:** React + Bulma + Recharts | Node.js + Express + JWT | Django + MongoDB
+### 💰 FinTally – Money Tracker App + AI Insights
 
----
+🧩 **Tech:** React + Node.js + Django + MongoDB  
+🧠 **Now evolving into a hybrid backend**: integrating Django for insights and Node.js for fast transaction APIs.
 
-### 📂 Taskflow-Ngnode – Advanced Task Management & AI Scheduler
+**Highlights:**
 
-#### 🎯 Purpose  
-A next-gen planner—automating your day, whether solo or as a team.
-
-#### 🤖 AI Scheduler  
-- PyTorch-powered, blends rule-based and machine learning decisions
-- Supports both supervised and unsupervised scheduling
-- Models: MiniBatchKMeans, IsolationForest, custom PyTorch models
-- Runs efficiently (2 threads for ML tasks), so it’s both powerful and practical
-
-#### 👥 Team Collaboration (Role System)  
-- **Viewer:** Invite members, view activities
-- **Editor:** All Viewer powers plus full CRUD on lists/tasks and AI Scheduler integration
-- **Admin:** Top authority—promote/demote/remove members, manage team hierarchy
-
-✅ Email notifications for team updates via Resend API
-
-#### 🎮 Inspirations  
-- **Among Us:** Team joining system
-- **Clash of Clans:** Role structure & progression
-
-#### 🚀 Features  
-- Auto-load fallback for pretrained PyTorch models
-- Dynamic rules + ML scheduling for adaptive task management
-- Scales from personal productivity to team-wide workflow
-
-#### 🛠️ Tech Stack  
-- **Frontend:** Angular  
-- **Backend:** Node.js  
-- **AI Scheduler Service:** FastAPI (connected to Node.js & frontend)
+* Smart finance manager with recurring transactions, PDF exports, and categorized analytics
+* Real-time insights: daily, weekly, and lifetime summaries via Django backend
+* Hybrid architecture (Node.js + Django) for seamless data synchronization
+* Pagination & infinite scroll for smooth UX
+* **AI Chatbot:** planned integration for smart financial suggestions *(under development)*
 
 ---
 
-### 📈 Revenue-AI – Django-based Financial Insights, Forecasting & EDA
+### 📂 Taskflow-Ngnode – AI-Powered Task Management
 
-- Django + DRF backend integrates PyTorch for ML
-- Full EDA & data preprocessing pipeline, interactive model selection
-- ML models: LinearRegression, DecisionTreeRegressor, XGBRegressor, LGBMRegressor, RandomForestRegressor (optimized for parallel CPU tasks)
-- Choose your regression model for forecasting
-- Export results as JSON, CSV, Excel, or image
-- Frontend: Vanilla TypeScript (Vite)
-- Database: Neon.tech PostgreSQL
-- Unified API via Node.js proxy backend
-- Auth: JWT + OAuth2.0
-- Deployable on Render / Railway / Vercel
+🧠 **Purpose:** Automate daily planning with intelligent scheduling.
 
----
+**Core Features:**
 
-## 📊 Data Science Projects
+* **AI Scheduler:** Rule-based + ML hybrid (MiniBatchKMeans, IsolationForest, PyTorch custom models)
+* **Team Roles:** Admin / Editor / Viewer with email notifications via Resend API
+* **Design Inspirations:** *Among Us* (team join flow) & *Clash of Clans* (role hierarchy)
+* Auto-load fallback for pretrained models
+* Adaptive ML scheduling with real-time rule updates
 
-From first steps to pro pipelines—my data science journey in five projects:
-
-- [**Data-Science-Projects**](https://github.com/Anshu-Gondi/Data-Science-Projects)  
-  *Beginner level*: Jupyter Notebooks, exploratory analysis, simple ML, visualization
-- [**Data-Science-Project-Alternate**](https://github.com/Anshu-Gondi/Data-Science-Project-Alternate)  
-  *Transition*: Hybrid notebooks/scripts, reusable functions, small ML models
-- Next projects go company-style:
-  - Modular Python scripts + configs
-  - Clear split: data, preprocessing, modeling, evaluation
-  - Pipelines for supervised/unsupervised ML
-  - Stronger docs & reproducibility
-
-✨ These projects chart my growth: notebooks → hybrid workflows → production-grade pipelines.
+**Stack:**  
+Angular · Node.js · FastAPI (AI microservice)
 
 ---
 
-## 🔐 OAuth2.0 Integration Projects
-- Secure login with Google OAuth  
-- JWT authentication in Node.js + Django apps  
-- Token refresh & access system  
+### 📈 Revenue-AI – Financial Forecasting & EDA Platform
+
+**Tech:** Django + DRF + PyTorch + Node.js Proxy + PostgreSQL
+
+**Capabilities:**
+
+* End-to-end EDA and ML forecasting workflows
+* Interactive model selection (Linear, DecisionTree, XGB, LGBM, RandomForest)
+* Multi-export support: JSON · CSV · Excel · Image
+* Modular ML design: deploy-ready via Render / Railway / Vercel
+* Integrated Auth (JWT + OAuth2.0)
+
+---
+
+## 🧪 Data Science Journey
+
+From small notebooks to production-grade ML pipelines 🚀
+
+* [**Data-Science-Projects**](https://github.com/Anshu-Gondi/Data-Science-Projects) – EDA, visualizations, starter ML
+* [**Data-Science-Project-Alternate**](https://github.com/Anshu-Gondi/Data-Science-Project-Alternate) – modular scripts, configs, and reusable ML pipelines
+
+Next stages:
+✔ Modular data → modeling → evaluation design
+✔ Parallelized training
+✔ Documentation & reproducibility
+
+---
+
+## 🔐 OAuth2.0 & Authentication Work
+
+* Secure login with **Google OAuth2.0**
+* **JWT** authentication in Node.js + Django apps
+* Refresh token and session management systems
 
 ---
 
@@ -171,24 +132,10 @@ From first steps to pro pipelines—my data science journey in five projects:
 ---
 
 ## 🌐 Connect with Me
-- 📺 YouTube: [@ag_youtube](https://youtube.com/@ag_youtube)
-- 📧 Email: agondi982@gmail.com
+
+* 📺 YouTube: [@ag_youtube](https://youtube.com/@ag_youtube)
+* 📧 Email: [agondi982@gmail.com](mailto:agondi982@gmail.com)
 
 ---
 
-✨ Always building, always learning 🚀
-
-<!--
-**Anshu-Gondi/Anshu-Gondi** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+> ✨ “Always building, always learning. From concept to code to creation.” 🚀
