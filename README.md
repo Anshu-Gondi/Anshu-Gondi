@@ -36,7 +36,7 @@ Check out the repo 👇
 ## 🧰 Tech Stack
 
 **Languages:**  
-Python · JavaScript · TypeScript · C · SQL · PostgreSQL · MySQL
+Python · JavaScript · TypeScript · C · Rust · SQL · PostgreSQL · MySQL
 
 **Frameworks & Libraries:**  
 Django · Node.js · Express · React · Angular · FastAPI
@@ -56,14 +56,14 @@ Docker · Git · Google Cloud · Render · Vercel
 
 ### 💰 FinTally – Money Tracker App + AI Insights
 
-🧩 **Tech:** React + Node.js + Django + MongoDB  
-🧠 **Now evolving into a hybrid backend**: integrating Django for insights and Node.js for fast transaction APIs.
+🧩 **Tech:** React + Node.js + Django + MongoDB + Rust  
+🧠 **Hybrid backend**: Node.js for fast APIs, Django for data analytics & insights, and Rust modules for high-performance, low-memory operations.
 
 **Highlights:**
-
 * Smart finance manager with recurring transactions, PDF exports, and categorized analytics
 * Real-time insights: daily, weekly, and lifetime summaries via Django backend
-* Hybrid architecture (Node.js + Django) for seamless data synchronization
+* **Hybrid architecture**: Node.js + Django + Rust for seamless data sync, performance boosting, and efficient memory usage
+* Rust modules integrated for critical paths (e.g. data processing, computation-heavy tasks)
 * Pagination & infinite scroll for smooth UX
 * **AI Chatbot:** planned integration for smart financial suggestions *(under development)*
 
