@@ -20,6 +20,7 @@ From **AI-powered finance systems** to **intelligent productivity tools**, I lov
 * **AI / ML Systems:** PyTorch · Scikit-learn · Scalable ML pipelines
 * **Cloud & Deployments:** Docker · Render · Vercel · Railway
 * **Systems Thinking:** Hybrid backends · service orchestration · Rust extensions *(in progress)*
+* **Low-level Rust bindings:** Learning PyTorch and OpenCV in Rust to build Python extensions for performance-critical ML and image-processing pipelines
 
 💡 My learning path: notebooks → hybrid workflows → production-ready systems.
 
@@ -124,9 +125,9 @@ Next stages:
 
 ## 📊 GitHub Stats
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Anshu-Gondi&show_icons=true&theme=radical" height="160" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anshu-Gondi&layout=compact&theme=radical" height="160" />
+<p align=\"center\">
+  <img src=\"https://github-readme-stats.vercel.app/api?username=Anshu-Gondi&show_icons=true&theme=radical\" height=\"160\" />
+  <img src=\"https://github-readme-stats.vercel.app/api/top-langs/?username=Anshu-Gondi&layout=compact&theme=radical\" height=\"160\" />
 </p>
 
 ---
