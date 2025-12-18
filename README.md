@@ -35,7 +35,7 @@ Check out the repo 👇
 
 ## 🧠 New Milestone: Rust Mastery (FFI & Web Backends)
 
-In **2.5 months**, I completed a focused learning and project sprint on **Rust**, achieving:
+In **2 months**, I completed a focused learning and project sprint on **Rust**, achieving:
 
 * Mastery of Rust fundamentals and advanced patterns
 * Building and consuming Rust libraries via **FFI** (integrating with C and other languages)
