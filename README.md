@@ -69,6 +69,8 @@ Docker · Git · Google Cloud · Render · Vercel
 
 ### 💰 FinTally – Money Tracker App + AI Insights
 
+Status: Upgrading
+
 🧩 **Tech:** React + Node.js + Django + MongoDB + Rust  
 🧠 **Hybrid backend**: Node.js for fast APIs, Django for data analytics & insights, and Rust modules for high-performance, low-memory operations.
 
@@ -82,7 +84,97 @@ Docker · Git · Google Cloud · Render · Vercel
 
 ---
 
+### 🏫 CampusVision — Face-based Attendance & Verification *(In building)*
+
+**Status:** In building  
+
+A campus-level attendance and verification system that blends teacher-managed class data with automated face verification using CCTV.
+
+---
+
+### 🧩 Tech Stack & Core Architecture
+
+- **Backend:** Django + Django REST Framework  
+- **Database:** PostgreSQL  
+- **Frontend:** React.js  
+
+**Vision, Vector Search & Intelligence Layer (Fully Rust-based)**
+- **Rust Core Engine** — High-performance, memory-safe processing
+- **PyO3** — Rust ↔ Python bindings for seamless Django integration
+- **ONNX Runtime (Rust)** — Inference for face embedding models
+- **tch (PyTorch for Rust)** — Custom tensor operations & experimentation
+- **opencv-rs** — CCTV frame ingestion, face detection & preprocessing
+- **hnsw_rs** — Approximate Nearest Neighbor (ANN) vector search
+- **Vector Storage:** Face embeddings stored as high-dimensional vectors
+
+**Architecture Style**
+- **Hybrid Backend**
+  - Django handles APIs, auth, analytics, and orchestration
+  - Rust handles vision, embeddings, vector search, and scheduling logic
+  - Python interacts with Rust modules exclusively via **PyO3**
+
+---
+
+### 🔍 How It Works
+
+* Teachers or school/college units enter branch and class details through a simple interface (teacher part remains manual and unchanged).
+* Students register by showing their face once; the system generates a face embedding using ONNX-based models running inside Rust.
+* CCTV streams are continuously processed using **opencv-rs**.
+* Detected faces are converted into embeddings and matched against stored vectors using **HNSW-based vector search**.
+* If a student is marked present outside the campus, they can submit attendance manually with required metadata.
+* The system tracks the student until physical campus entry.
+* Once the student reaches campus, CCTV-based Rust verification reconciles manual entries automatically.
+* Django dashboards display attendance status, analytics, and reports.
+
+---
+
+### 🧠 Vector Search & Scheduling Algorithms
+
+**Graph-based Algorithms (Primary – Real-time Matching)**
+- **HNSW (Hierarchical Navigable Small World Graph)**
+  - Fast approximate nearest-neighbor search
+  - Low-latency face matching at campus scale
+  - Optimized for real-time CCTV streams
+- Implemented using **`hnsw_rs`**
+- Used for:
+  - Identity verification
+  - Real-time presence confirmation
+  - High-throughput vector similarity search
+
+**Tree-based Algorithms (Secondary – Scheduling & Coordination)**
+- **KD-Tree / Ball Tree–style partitioning**
+  - Organizes embeddings and verification events hierarchically
+  - Assists in:
+    - Scheduling verification windows
+    - Load distribution across camera zones
+    - Time-based reconciliation of manual vs automated attendance
+- Used for:
+  - Attendance scheduling logic
+  - Zone-wise and time-sliced verification control
+
+**Hybrid Strategy**
+- **Graph-based search** → Fast identity matching  
+- **Tree-based logic** → Structured scheduling, prioritization, and conflict resolution  
+
+---
+
+### 🎯 Design Focus
+
+- Real-time, low-latency verification
+- Fully Rust-driven vision & vector intelligence
+- Safe Python integration via PyO3 (no unsafe FFI)
+- Scalable across multiple campuses and CCTV feeds
+- Clear separation between UI, orchestration, and intelligence layers
+
+---
+
+This project is currently in active development and is being designed to scale across colleges and schools.
+
+---
+
 ### 📂 Taskflow-Ngnode – AI-Powered Task Management
+
+Status: Complete
 
 🧠 **Purpose:** Automate daily planning with intelligent scheduling.
 
@@ -99,21 +191,9 @@ Angular · Node.js · FastAPI (AI microservice)
 
 ---
 
-### 🏫 Campus Vision — Face Recognition & CCTV Analytics
-
-🧩 **Tech:** Rust (pyo3) for face recognition, CCTV ingest & vector search logic · Django backend · React frontend  
-🧠 **Overview:** Real-time campus monitoring and analytics using Rust-powered detection pipelines exposed to Python via pyo3 for fast inference, vector search for similarity matching, Django for APIs and orchestration, and React for the front-end dashboard.
-
-**Highlights:**
-* Face recognition pipelines written in Rust, exposed to Python via pyo3 for easy integration with existing ML tooling
-* CCTV stream processing and event detection with efficient Rust modules
-* Vector search logic for fast nearest-neighbor retrieval of embeddings
-* Django handles authentication, data storage, and API endpoints
-* React provides a responsive dashboard for live feeds, alerts, and analytics
-
----
-
 ### 📈 Revenue-AI – Financial Forecasting & EDA Platform
+
+Status: Complete
 
 **Tech:** Django + DRF + PyTorch + Node.js Proxy + PostgreSQL
 
