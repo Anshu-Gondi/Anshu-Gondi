@@ -88,9 +88,10 @@ Status: Upgrading
 
 **Status:** In building  
 
-A campus-level attendance and verification system that blends teacher-managed class data with automated face verification using CCTV.
+**TL;DR:**  
+A real-time, CCTV-based campus attendance system powered by a fully Rust-built face recognition and vector search engine (ONNX + HNSW), integrated with Django via PyO3.
 
----
+A campus-level attendance and verification system that blends teacher-managed class data with automated face verification using CCTV.
 
 ### 🧩 Tech Stack & Core Architecture
 
@@ -108,67 +109,44 @@ A campus-level attendance and verification system that blends teacher-managed cl
 - **Vector Storage:** Face embeddings stored as high-dimensional vectors
 
 **Architecture Style**
-- **Hybrid Backend**
-  - Django handles APIs, auth, analytics, and orchestration
-  - Rust handles vision, embeddings, vector search, and scheduling logic
-  - Python interacts with Rust modules exclusively via **PyO3**
-
----
+- Django handles APIs, authentication, analytics, and orchestration  
+- Rust handles vision, embeddings, vector search, and scheduling logic  
+- Python interacts with Rust modules exclusively via **PyO3**
 
 ### 🔍 How It Works
 
 * Teachers or school/college units enter branch and class details through a simple interface (teacher part remains manual and unchanged).
-* Students register by showing their face once; the system generates a face embedding using ONNX-based models running inside Rust.
+* Students register once; face embeddings are generated using ONNX models running inside Rust.
 * CCTV streams are continuously processed using **opencv-rs**.
-* Detected faces are converted into embeddings and matched against stored vectors using **HNSW-based vector search**.
-* If a student is marked present outside the campus, they can submit attendance manually with required metadata.
-* The system tracks the student until physical campus entry.
-* Once the student reaches campus, CCTV-based Rust verification reconciles manual entries automatically.
+* Detected faces are converted into embeddings and matched using **HNSW-based vector search**.
+* Manual attendance outside campus is tracked and later reconciled once CCTV verification confirms physical presence.
 * Django dashboards display attendance status, analytics, and reports.
-
----
 
 ### 🧠 Vector Search & Scheduling Algorithms
 
-**Graph-based Algorithms (Primary – Real-time Matching)**
+**Graph-based (Primary – Real-time Matching)**
 - **HNSW (Hierarchical Navigable Small World Graph)**
-  - Fast approximate nearest-neighbor search
-  - Low-latency face matching at campus scale
-  - Optimized for real-time CCTV streams
 - Implemented using **`hnsw_rs`**
-- Used for:
-  - Identity verification
-  - Real-time presence confirmation
-  - High-throughput vector similarity search
+- Used for identity verification and low-latency vector similarity search
 
-**Tree-based Algorithms (Secondary – Scheduling & Coordination)**
+**Tree-based (Secondary – Scheduling & Coordination)**
 - **KD-Tree / Ball Tree–style partitioning**
-  - Organizes embeddings and verification events hierarchically
-  - Assists in:
-    - Scheduling verification windows
-    - Load distribution across camera zones
-    - Time-based reconciliation of manual vs automated attendance
-- Used for:
-  - Attendance scheduling logic
-  - Zone-wise and time-sliced verification control
+- Used for attendance scheduling, zone-wise verification, and time-based reconciliation
 
 **Hybrid Strategy**
-- **Graph-based search** → Fast identity matching  
-- **Tree-based logic** → Structured scheduling, prioritization, and conflict resolution  
-
----
+- Graph-based search → Fast identity matching  
+- Tree-based logic → Structured scheduling and conflict resolution  
 
 ### 🎯 Design Focus
 
 - Real-time, low-latency verification
 - Fully Rust-driven vision & vector intelligence
-- Safe Python integration via PyO3 (no unsafe FFI)
+- Safe Python integration via PyO3
 - Scalable across multiple campuses and CCTV feeds
 - Clear separation between UI, orchestration, and intelligence layers
 
----
-
 This project is currently in active development and is being designed to scale across colleges and schools.
+
 
 ---
 
