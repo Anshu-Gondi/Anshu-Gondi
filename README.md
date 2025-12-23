@@ -69,8 +69,6 @@ Docker · Git · Google Cloud · Render · Vercel
 
 ### 💰 FinTally – Money Tracker App + AI Insights
 
-Status: Upgrading
-
 🧩 **Tech:** React + Node.js + Django + MongoDB + Rust  
 🧠 **Hybrid backend**: Node.js for fast APIs, Django for data analytics & insights, and Rust modules for high-performance, low-memory operations.
 
@@ -84,27 +82,7 @@ Status: Upgrading
 
 ---
 
-### 🏫 CampusVision — Face-based Attendance & Verification (In building)
-
-Status: In building
-
-A campus-level attendance and verification system that blends teacher-managed class data with automated face verification using CCTV.
-
-How it works:
-* Teachers or school/college units enter branch and class details through a simple interface (teacher part remains manual and unchanged).
-* Students register by showing their face once; the system stores a facial template for verification.
-* CCTV systems perform automatic verification when students enter campus/class — attendance is recorded automatically.
-* If a student is marked present outside campus (e.g., attempting remote marking), they can submit attendance manually with required details; the system then tracks the student until they reach campus.
-* Once the student reaches the campus, CCTV verification takes over and reconciles manual entries.
-* A data analytics dashboard provides attendance insights, reports, and visualizations for administrators and teachers.
-
-This project is currently in active development and will be designed to scale across colleges and schools.
-
----
-
 ### 📂 Taskflow-Ngnode – AI-Powered Task Management
-
-Status: Complete
 
 🧠 **Purpose:** Automate daily planning with intelligent scheduling.
 
@@ -121,9 +99,21 @@ Angular · Node.js · FastAPI (AI microservice)
 
 ---
 
-### 📈 Revenue-AI – Financial Forecasting & EDA Platform
+### 🏫 Campus Vision — Face Recognition & CCTV Analytics
 
-Status: Complete
+🧩 **Tech:** Rust (pyo3) for face recognition, CCTV ingest & vector search logic · Django backend · React frontend  
+🧠 **Overview:** Real-time campus monitoring and analytics using Rust-powered detection pipelines exposed to Python via pyo3 for fast inference, vector search for similarity matching, Django for APIs and orchestration, and React for the front-end dashboard.
+
+**Highlights:**
+* Face recognition pipelines written in Rust, exposed to Python via pyo3 for easy integration with existing ML tooling
+* CCTV stream processing and event detection with efficient Rust modules
+* Vector search logic for fast nearest-neighbor retrieval of embeddings
+* Django handles authentication, data storage, and API endpoints
+* React provides a responsive dashboard for live feeds, alerts, and analytics
+
+---
+
+### 📈 Revenue-AI – Financial Forecasting & EDA Platform
 
 **Tech:** Django + DRF + PyTorch + Node.js Proxy + PostgreSQL
 
