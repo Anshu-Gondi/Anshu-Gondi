@@ -35,7 +35,7 @@ Check out the repo 👇
 
 ## 🧠 New Milestone: Rust Mastery (FFI & Web Backends)
 
-In **2 months**, I completed a focused learning and project sprint on **Rust**, achieving:
+In **2.5 months**, I completed a focused learning and project sprint on **Rust**, achieving:
 
 * Mastery of Rust fundamentals and advanced patterns
 * Building and consuming Rust libraries via **FFI** (integrating with C and other languages)
@@ -69,6 +69,8 @@ Docker · Git · Google Cloud · Render · Vercel
 
 ### 💰 FinTally – Money Tracker App + AI Insights
 
+Status: Upgrading
+
 🧩 **Tech:** React + Node.js + Django + MongoDB + Rust  
 🧠 **Hybrid backend**: Node.js for fast APIs, Django for data analytics & insights, and Rust modules for high-performance, low-memory operations.
 
@@ -82,7 +84,27 @@ Docker · Git · Google Cloud · Render · Vercel
 
 ---
 
+### 🏫 CampusVision — Face-based Attendance & Verification (In building)
+
+Status: In building
+
+A campus-level attendance and verification system that blends teacher-managed class data with automated face verification using CCTV.
+
+How it works:
+* Teachers or school/college units enter branch and class details through a simple interface (teacher part remains manual and unchanged).
+* Students register by showing their face once; the system stores a facial template for verification.
+* CCTV systems perform automatic verification when students enter campus/class — attendance is recorded automatically.
+* If a student is marked present outside campus (e.g., attempting remote marking), they can submit attendance manually with required details; the system then tracks the student until they reach campus.
+* Once the student reaches the campus, CCTV verification takes over and reconciles manual entries.
+* A data analytics dashboard provides attendance insights, reports, and visualizations for administrators and teachers.
+
+This project is currently in active development and will be designed to scale across colleges and schools.
+
+---
+
 ### 📂 Taskflow-Ngnode – AI-Powered Task Management
+
+Status: Complete
 
 🧠 **Purpose:** Automate daily planning with intelligent scheduling.
 
@@ -100,6 +122,8 @@ Angular · Node.js · FastAPI (AI microservice)
 ---
 
 ### 📈 Revenue-AI – Financial Forecasting & EDA Platform
+
+Status: Complete
 
 **Tech:** Django + DRF + PyTorch + Node.js Proxy + PostgreSQL
 
