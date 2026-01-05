@@ -46,10 +46,23 @@ This milestone helped me integrate Rust modules into existing projects and lever
 
 ---
 
+## 🧠 New Milestone: C++ Mastery (OOP, STL & Interop with Rust)
+
+After solidifying my Rust expertise, I dove into **C++** to deepen my understanding of systems programming and enable powerful interop in hybrid backends:
+
+* Mastered modern C++ (11/14/17/20/23 features), OOP principles, templates, STL containers & algorithms
+* Built high-performance projects using RAII, smart pointers, multithreading, and fine-grained memory control
+* Focused heavily on **C++/Rust interop** via FFI, CXX, and bindgen – seamless integration of C++ modules into Rust codebases and vice versa
+* Emphasis on zero-cost abstractions, idiomatic patterns, and safe bridging between C++ and Rust for real-world hybrid systems
+
+This milestone allows me to selectively use C++ for legacy integration, performance-critical libraries, or GPU/parallel computing while keeping the safety guarantees of Rust in production services.
+
+---
+
 ## 🧰 Tech Stack
 
 **Languages:**  
-Python · JavaScript · TypeScript · C · Rust · SQL · PostgreSQL · MySQL
+Python · JavaScript · TypeScript · C · Rust · **C++** · SQL · PostgreSQL · MySQL
 
 **Frameworks & Libraries:**  
 Django · Node.js · Express · React · Angular · FastAPI
