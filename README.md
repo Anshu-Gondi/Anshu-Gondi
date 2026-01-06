@@ -221,10 +221,12 @@ Next stages:
 
 ## 📊 GitHub Stats
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Anshu-Gondi&show_icons=true&theme=radical" height="160" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anshu-Gondi&layout=compact&theme=radical" height="160" />
-</p>
+<div align="center">
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Anshu-Gondi&show_icons=true&theme=radical)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Anshu-Gondi&layout=compact&theme=radical)
+
+</div>
 
 ---
 
