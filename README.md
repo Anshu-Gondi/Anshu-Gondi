@@ -1,237 +1,162 @@
-# 👋 Hi, I'm **Anshu Gondi**
+# 👋 Hi, I'm Anshu Gondi
 
-> 💼 **Open to internships or remote collaborations – focused on full-stack + AI systems.**
+> 💼 **Open to internships and remote collaborations — specializing in full-stack development and AI systems.**
 
-🎓 **1st Semester B.Tech Student (India)**  
-💻 **Full-Stack Developer** | 🤖 **AI & Data Science Enthusiast** | 🌍 **Open Source Builder**
-
----
-
-> “Driven by curiosity. Obsessed with innovation. Building the future—one project at a time.”
-
-I’m a passionate engineering student turning ideas into impact through code.  
-From **AI-powered finance systems** to **intelligent productivity tools**, I love building at the intersection of **creativity, data, and engineering**.
+🎓 **B.Tech 1st Year Student (India)**  
+💻 **Full-Stack Developer** · 🤖 **AI & Machine Learning Engineer** · 🌍 **Open Source Contributor**
 
 ---
 
-## 🚀 Currently Exploring
+> “Driven by curiosity. Building scalable, production-ready systems at the intersection of code, data, and performance.”
 
-* **Full-Stack Development:** MERN stack · Django · Angular · FastAPI
-* **AI / ML Systems:** PyTorch · Scikit-learn · Scalable ML pipelines
-* **Cloud & Deployments:** Docker · Render · Vercel · Railway
-* **Systems Thinking:** Hybrid backends · service orchestration · Rust extensions *(in progress)*
-
-💡 My learning path: notebooks → hybrid workflows → production-ready systems.
+Passionate first-year engineering student delivering high-impact projects in full-stack, AI, and systems programming. Experienced in designing hybrid architectures that combine productivity with performance and safety.
 
 ---
 
-## 🧠 New Milestone: C Language Conquered!
+## 🛠 Tech Stack
 
-In just **11 days**, I explored and built multiple projects in **C**, mastering core concepts from beginner to advanced level.  
-Check out the repo 👇  
-🔗 [C-Language-Project-beginner-to-advanced-level](https://github.com/Anshu-Gondi/C-Language-Project-beginner-to-advanced-level)
+**Languages**  
+Python · TypeScript · JavaScript · Rust · C++ · C · SQL
 
----
+**Frontend**  
+React · React Native · Angular
 
-## 🧠 New Milestone: Rust Mastery (FFI & Web Backends)
+**Backend & Frameworks**  
+Django · FastAPI · Node.js · Express · Actix (Rust) · Warp (Rust)
 
-In **2.5 months**, I completed a focused learning and project sprint on **Rust**, achieving:
+**Databases**  
+PostgreSQL · MySQL · MongoDB
 
-* Mastery of Rust fundamentals and advanced patterns
-* Building and consuming Rust libraries via **FFI** (integrating with C and other languages)
-* Developing web backends and services using Rust web frameworks (e.g., Actix, Warp)
-* Production-oriented practices: memory-safe, high-performance modules for hybrid backends
+**AI / ML**  
+PyTorch · Scikit-learn · NumPy · Pandas · ONNX Runtime
 
-This milestone helped me integrate Rust modules into existing projects and leverage its performance and safety for backend services.
+**DevOps & Tools**  
+Docker · Git · Vercel · Render · Railway · Google Cloud
 
----
-
-## 🧠 New Milestone: C++ Mastery (OOP, STL & Interop with Rust)
-
-After solidifying my Rust expertise, I dove into **C++** to deepen my understanding of systems programming and enable powerful interop in hybrid backends:
-
-* Mastered modern C++ (11/14/17/20/23 features), OOP principles, templates, STL containers & algorithms
-* Built high-performance projects using RAII, smart pointers, multithreading, and fine-grained memory control
-* Focused heavily on **C++/Rust interop** via FFI, CXX, and bindgen – seamless integration of C++ modules into Rust codebases and vice versa
-* Emphasis on zero-cost abstractions, idiomatic patterns, and safe bridging between C++ and Rust for real-world hybrid systems
-
-This milestone allows me to selectively use C++ for legacy integration, performance-critical libraries, or GPU/parallel computing while keeping the safety guarantees of Rust in production services.
-
----
-
-## 🧰 Tech Stack
-
-**Languages:**  
-Python · JavaScript · TypeScript · C · Rust · **C++** · SQL · PostgreSQL · MySQL
-
-**Frameworks & Libraries:**  
-Django · Node.js · Express · React · Angular · FastAPI
-
-**Databases:**  
-MongoDB · PostgreSQL · MySQL
-
-**AI / ML:**  
-PyTorch · NumPy · Pandas · Scikit-learn
-
-**Tools & Platforms:**  
-Docker · Git · Google Cloud · Render · Vercel
+**Systems & Interop**  
+PyO3 · FFI · CXX · bindgen · OpenCV-rs · hnsw_rs
 
 ---
 
 ## 🌟 Featured Projects
 
-### 💰 FinTally – Money Tracker App + AI Insights
+### 💰 FinTally — Personal Finance Tracker with AI Insights  
+**Status:** Active development (upgrading)
 
-Status: Upgrading
+**Tech:** React · Node.js · Django · MongoDB · Rust (performance modules) · **C++ (high-performance computation modules)**
 
-🧩 **Tech:** React + Node.js + Django + MongoDB + Rust  
-🧠 **Hybrid backend**: Node.js for fast APIs, Django for data analytics & insights, and Rust modules for high-performance, low-memory operations.
-
-**Highlights:**
-* Smart finance manager with recurring transactions, PDF exports, and categorized analytics
-* Real-time insights: daily, weekly, and lifetime summaries via Django backend
-* **Hybrid architecture**: Node.js + Django + Rust for seamless data sync, performance boosting, and efficient memory usage
-* Rust modules integrated for critical paths (e.g. data processing, computation-heavy tasks)
-* Pagination & infinite scroll for smooth UX
-* **AI Chatbot:** planned integration for smart financial suggestions *(under development)*
-
----
-
-### 🏫 CampusVision — Face-based Attendance & Verification *(In building)*
-
-**Status:** In building  
-
-**TL;DR:**  
-A real-time, CCTV-based campus attendance system powered by a fully Rust-built face recognition and vector search engine (ONNX + HNSW), integrated with Django via PyO3.
-
-A campus-level attendance and verification system that blends teacher-managed class data with automated face verification using CCTV.
-
-### 🧩 Tech Stack & Core Architecture
-
-- **Backend:** Django + Django REST Framework  
-- **Database:** PostgreSQL  
-- **Frontend:** React.js  
-
-**Vision, Vector Search & Intelligence Layer (Fully Rust-based)**
-- **Rust Core Engine** — High-performance, memory-safe processing
-- **PyO3** — Rust ↔ Python bindings for seamless Django integration
-- **ONNX Runtime (Rust)** — Inference for face embedding models
-- **tch (PyTorch for Rust)** — Custom tensor operations & experimentation
-- **opencv-rs** — CCTV frame ingestion, face detection & preprocessing
-- **hnsw_rs** — Approximate Nearest Neighbor (ANN) vector search
-- **Vector Storage:** Face embeddings stored as high-dimensional vectors
-
-**Architecture Style**
-- Django handles APIs, authentication, analytics, and orchestration  
-- Rust handles vision, embeddings, vector search, and scheduling logic  
-- Python interacts with Rust modules exclusively via **PyO3**
-
-### 🔍 How It Works
-
-* Teachers or school/college units enter branch and class details through a simple interface (teacher part remains manual and unchanged).
-* Students register once; face embeddings are generated using ONNX models running inside Rust.
-* CCTV streams are continuously processed using **opencv-rs**.
-* Detected faces are converted into embeddings and matched using **HNSW-based vector search**.
-* Manual attendance outside campus is tracked and later reconciled once CCTV verification confirms physical presence.
-* Django dashboards display attendance status, analytics, and reports.
-
-### 🧠 Vector Search & Scheduling Algorithms
-
-**Graph-based (Primary – Real-time Matching)**
-- **HNSW (Hierarchical Navigable Small World Graph)**
-- Implemented using **`hnsw_rs`**
-- Used for identity verification and low-latency vector similarity search
-
-**Tree-based (Secondary – Scheduling & Coordination)**
-- **KD-Tree / Ball Tree–style partitioning**
-- Used for attendance scheduling, zone-wise verification, and time-based reconciliation
-
-**Hybrid Strategy**
-- Graph-based search → Fast identity matching  
-- Tree-based logic → Structured scheduling and conflict resolution  
-
-### 🎯 Design Focus
-
-- Real-time, low-latency verification
-- Fully Rust-driven vision & vector intelligence
-- Safe Python integration via PyO3
-- Scalable across multiple campuses and CCTV feeds
-- Clear separation between UI, orchestration, and intelligence layers
-
-This project is currently in active development and is being designed to scale across colleges and schools.
+**Key Features:**
+- Recurring transactions, PDF exports, categorized analytics
+- Real-time financial summaries (daily/weekly/lifetime)
+- Advanced hybrid backend: 
+  - Node.js (fast APIs)
+  - Django (data analytics & insights)
+  - Rust (memory-safe, low-latency processing)
+  - **C++ (ultra-high-performance numerical and legacy-compatible modules via FFI/CXX)**
+- Infinite scroll, pagination, responsive UX
+- Planned: AI-powered financial advisor chatbot
 
 ---
 
-### 📂 Taskflow-Ngnode – AI-Powered Task Management
+### 🏫 CampusVision — Real-Time Face-Based Attendance System  
+**Status:** In active development
 
-Status: Complete
+**Tech:** Django REST Framework · React · **React Native** · PostgreSQL · Rust (core vision engine) · PyO3
 
-🧠 **Purpose:** Automate daily planning with intelligent scheduling.
+**Architecture Highlights:**
+- Fully Rust-powered vision layer: face detection (opencv-rs), embedding generation (ONNX), vector search (hnsw_rs)
+- Seamless Python-Rust integration via PyO3
+- HNSW for low-latency real-time matching
+- Hybrid vector search strategy (HNSW + tree-based scheduling)
+- Django orchestration: auth, APIs, analytics, teacher dashboard
+- Cross-platform access via React (web dashboard) and **React Native** (mobile app for teachers/students)
+- Designed for multi-campus, multi-CCTV scalability
 
-**Core Features:**
-
-* **AI Scheduler:** Rule-based + ML hybrid (MiniBatchKMeans, IsolationForest, PyTorch custom models)
-* **Team Roles:** Admin / Editor / Viewer with email notifications via Resend API
-* **Design Inspirations:** *Among Us* (team join flow) & *Clash of Clans* (role hierarchy)
-* Auto-load fallback for pretrained models
-* Adaptive ML scheduling with real-time rule updates
-
-**Stack:**  
-Angular · Node.js · FastAPI (AI microservice)
-
----
-
-### 📈 Revenue-AI – Financial Forecasting & EDA Platform
-
-Status: Complete
-
-**Tech:** Django + DRF + PyTorch + Node.js Proxy + PostgreSQL
-
-**Capabilities:**
-
-* End-to-end EDA and ML forecasting workflows
-* Interactive model selection (Linear, DecisionTree, XGB, LGBM, RandomForest)
-* Multi-export support: JSON · CSV · Excel · Image
-* Modular ML design: deploy-ready via Render / Railway / Vercel
-* Integrated Auth (JWT + OAuth2.0)
+**Goal:** Accurate, automated attendance with minimal manual input.
 
 ---
 
-## 🧪 Data Science Journey
+### 📂 Taskflow-Ngnode — AI-Powered Task Management Platform  
+**Status:** Complete & deployed
 
-From small notebooks to production-grade ML pipelines 🚀
+**Tech:** Angular · Node.js · FastAPI (AI service)
 
-* [**Data-Science-Projects**](https://github.com/Anshu-Gondi/Data-Science-Projects) – EDA, visualizations, starter ML
-* [**Data-Science-Project-Alternate**](https://github.com/Anshu-Gondi/Data-Science-Project-Alternate) – modular scripts, configs, and reusable ML pipelines
-
-Next stages:
-✔ Modular data → modeling → evaluation design
-✔ Parallelized training
-✔ Documentation & reproducibility
+**Features:**
+- Intelligent task scheduling (hybrid rule-based + ML: MiniBatchKMeans, IsolationForest, PyTorch)
+- Role-based access (Admin/Editor/Viewer) with email notifications
+- Adaptive scheduling with real-time rule updates
 
 ---
 
-## 🔐 OAuth2.0 & Authentication Work
+### 📈 Revenue-AI — Financial Forecasting & EDA Platform  
+**Status:** Complete & deployed
 
-* Secure login with **Google OAuth2.0**
-* **JWT** authentication in Node.js + Django apps
-* Refresh token and session management systems
+**Tech:** Django · PyTorch · Node.js Proxy · PostgreSQL
+
+**Features:**
+- Interactive EDA and time-series forecasting
+- Model selection: Linear, Tree-based, XGBoost, LightGBM, RandomForest
+- Export: JSON · CSV · Excel · Charts
+- Secure auth: JWT + OAuth2.0
+
+---
+
+## 🧠 Key Learning Milestones
+
+### C — Systems Foundation  
+Mastered core concepts and built multiple projects in **11 days**.  
+🔗 [C-Language-Projects](https://github.com/Anshu-Gondi/C-Language-Project-beginner-to-advanced-level)
+
+### Rust — Performance & Safety  
+Completed intensive 2.5-month sprint:
+- Advanced patterns, ownership, concurrency
+- FFI for language interop
+- Web backends with Actix/Warp
+- Production-grade memory-safe modules integrated into hybrid systems
+
+### C++ — Modern Systems & Interop  
+Deep expertise in modern C++ (11–23), OOP, STL, templates, RAII, multithreading  
+Heavy focus on **Rust ↔ C++ interop** using CXX, bindgen, and FFI  
+Enables legacy integration and GPU/parallel computing while retaining Rust safety
+
+---
+
+## 🧪 Machine Learning Journey
+
+From exploratory notebooks to modular, production-ready pipelines  
+🔗 [Data-Science-Projects](https://github.com/Anshu-Gondi/Data-Science-Projects)  
+🔗 [Modular ML Pipelines](https://github.com/Anshu-Gondi/Data-Science-Project-Alternate)
+
+**Current Focus:**  
+- Reproducible workflows  
+- Parallel training  
+- Deployment-ready models
+
+---
+
+## 🔐 Security & Authentication
+
+- Google OAuth2.0 integration
+- JWT-based auth in Django and Node.js
+- Secure refresh token and session management
 
 ---
 
 ## 📊 GitHub Activity
 
-🔹 Active contributor across full-stack, AI, and systems projects  
-🔹 Consistent project-based commits  
-🔹 Focus on production-ready repositories over vanity metrics
+- Consistent contributor to full-stack, AI, and systems projects
+- Emphasis on clean, production-oriented code
+- Active across public and private repositories
 
 ---
 
 ## 🌐 Connect with Me
 
-* 📺 YouTube: [@ag_youtube](https://youtube.com/@ag_youtube)
-* 📧 Email: [agondi982@gmail.com](mailto:agondi982@gmail.com)
+📧 **Email:** [agondi982@gmail.com](mailto:agondi982@gmail.com)  
+📺 **YouTube:** [@ag_youtube](https://youtube.com/@ag_youtube)
 
 ---
 
-> ✨ “Always building, always learning. From concept to code to creation.” 🚀
+> ✨ Always building. Always shipping. Always learning.
+
+🚀 Open to discussions on internships, collaborations, or mentorship in full-stack, AI, or systems programming.
