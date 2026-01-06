@@ -219,14 +219,11 @@ Next stages:
 
 ---
 
-## 📊 GitHub Stats
+## 📊 GitHub Activity
 
-<div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Anshu-Gondi&show_icons=true&theme=radical)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Anshu-Gondi&layout=compact&theme=radical)
-
-</div>
+🔹 Active contributor across full-stack, AI, and systems projects  
+🔹 Consistent project-based commits  
+🔹 Focus on production-ready repositories over vanity metrics
 
 ---
 
