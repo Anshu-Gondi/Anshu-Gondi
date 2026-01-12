@@ -11,6 +11,20 @@
 
 Passionate first-year engineering student delivering high-impact projects in full-stack, AI, and systems programming. Experienced in designing hybrid architectures that combine productivity with performance and safety.
 
+### Table of Contents
+
+- [Tech Stack](#-tech-stack)
+- [Featured Projects](#-featured-projects)
+  - [FinTally — Personal Finance Tracker with AI Insights](#-fintally--personal-finance-tracker-with-ai-insights)
+  - [CampusVision — Real-Time Face-Based Attendance System](#-campusvision--real-time-face-based-attendance-system)
+  - [Taskflow-Ngnode — AI-Powered Task Management Platform](#-taskflow-ngnode--ai-powered-task-management-platform)
+  - [Revenue-AI — Financial Forecasting & EDA Platform](#-revenue-ai--financial-forecasting--eda-platform)
+- [Key Learning Milestones](#-key-learning-milestones)
+- [Machine Learning Journey](#-machine-learning-journey)
+- [Security & Authentication](#-security--authentication)
+- [GitHub Activity](#-github-activity)
+- [Connect with Me](#-connect-with-me)
+
 ---
 
 ## 🛠 Tech Stack
@@ -56,8 +70,6 @@ PyO3 · FFI · CXX · bindgen · OpenCV-rs · hnsw_rs
 - Infinite scroll, pagination, responsive UX
 - Planned: AI-powered financial advisor chatbot
 
----
-
 ### 🏫 CampusVision — Real-Time Face-Based Attendance System  
 **Status:** In active development
 
@@ -74,8 +86,6 @@ PyO3 · FFI · CXX · bindgen · OpenCV-rs · hnsw_rs
 
 **Goal:** Accurate, automated attendance with minimal manual input.
 
----
-
 ### 📂 Taskflow-Ngnode — AI-Powered Task Management Platform  
 **Status:** Complete & deployed
 
@@ -85,8 +95,6 @@ PyO3 · FFI · CXX · bindgen · OpenCV-rs · hnsw_rs
 - Intelligent task scheduling (hybrid rule-based + ML: MiniBatchKMeans, IsolationForest, PyTorch)
 - Role-based access (Admin/Editor/Viewer) with email notifications
 - Adaptive scheduling with real-time rule updates
-
----
 
 ### 📈 Revenue-AI — Financial Forecasting & EDA Platform  
 **Status:** Complete & deployed
