@@ -50,6 +50,11 @@ Passionate first-year engineering student delivering high-impact projects in ful
   <small>Animated snake eating my contribution graph (dark/light mode auto-switch)</small>
 </p>
 
+<!-- GitHub Streak Stats (new second visual - animated streak graph) -->
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Anshu-Gondi&theme=radical&hide_border=true&date_format=M+j%5B%2C+Y%5D" alt="GitHub Streak Stats" height="180" onerror="this.src='https://via.placeholder.com/600x180/1e1e1e/ffffff?text=Streak+Stats+Loading...';this.alt='Streak stats loading - refresh later';"/>
+</p>
+
 <!-- GitHub Profile Trophies (shiny 3D cards) -->
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=Anshu-Gondi&theme=radical&no-frame=true&margin-w=15&margin-h=15&row=1&column=6" alt="GitHub Profile Trophies" onerror="this.src='https://via.placeholder.com/600x150/1e1e1e/ffffff?text=Trophies+Loading...';"/>
