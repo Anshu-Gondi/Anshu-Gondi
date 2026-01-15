@@ -39,12 +39,12 @@ Passionate first-year engineering student delivering high-impact projects in ful
   <small>Interactive 3D city of my contributions — click to explore! (Generates automatically each year)</small>
 </p>
 
-<!-- Contribution Snake Animation (SVG - auto dark/light) -->
+<!-- Contribution Snake Animation (SVG - auto dark/light using your uploaded files) -->
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Anshu-Gondi/Anshu-Gondi/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Anshu-Gondi/Anshu-Gondi/output/github-contribution-grid-snake.svg" />
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Anshu-Gondi/Anshu-Gondi/output/github-contribution-grid-snake.svg" width="800" onerror="this.src='https://via.placeholder.com/800x200/1e1e1e/ffffff?text=Snake+Animation+Loading...';this.alt='Snake animation - upload SVGs to output folder';"/>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Anshu-Gondi/Anshu-Gondi/main/output/github-user-contribution%20(1).svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Anshu-Gondi/Anshu-Gondi/main/output/github-user-contribution.svg" />
+    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Anshu-Gondi/Anshu-Gondi/main/output/github-user-contribution.svg" width="800" onerror="this.src='https://via.placeholder.com/800x200/1e1e1e/ffffff?text=Snake+Animation+Loading...';this.alt='Snake animation - check output folder';"/>
   </picture>
   <br>
   <small>Animated snake eating my contribution graph (dark/light mode auto-switch)</small>
