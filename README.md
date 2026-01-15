@@ -13,6 +13,7 @@ Passionate first-year engineering student delivering high-impact projects in ful
 
 ### Table of Contents
 
+- [Visual Highlights](#-visual-highlights)
 - [Tech Stack](#-tech-stack)
 - [Featured Projects](#-featured-projects)
   - [CampusVision — Real-Time Face-Based Attendance System](#-campusvision--real-time-face-based-attendance-system)
@@ -24,6 +25,41 @@ Passionate first-year engineering student delivering high-impact projects in ful
 - [Security & Authentication](#-security--authentication)
 - [GitHub Activity](#-github-activity)
 - [Connect with Me](#-connect-with-me)
+
+---
+
+### 🌌 Visual Highlights
+
+<!-- GitHub Skyline 3D Interactive City (2025) - Auto-generates yearly -->
+<p align="center">
+  <a href="https://skyline.github.com/Anshu-Gondi/2025" target="_blank">
+    <img src="https://skyline.github.com/Anshu-Gondi/2025/card.png" alt="GitHub Skyline 2025 - 3D Contribution City" width="600" onerror="this.src='https://via.placeholder.com/600x300/1e1e1e/ffffff?text=Skyline+2025+Coming+Soon';this.alt='Skyline 2025 coming soon - check back in January/February';"/>
+  </a>
+  <br>
+  <small>Interactive 3D city of my contributions — click to explore! (Generates automatically each year)</small>
+</p>
+
+<!-- Contribution Snake Animation (SVG - auto dark/light) -->
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Anshu-Gondi/Anshu-Gondi/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Anshu-Gondi/Anshu-Gondi/output/github-contribution-grid-snake.svg" />
+    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Anshu-Gondi/Anshu-Gondi/output/github-contribution-grid-snake.svg" width="800" onerror="this.src='https://via.placeholder.com/800x200/1e1e1e/ffffff?text=Snake+Animation+Loading...';this.alt='Snake animation - upload SVGs to output folder';"/>
+  </picture>
+  <br>
+  <small>Animated snake eating my contribution graph (dark/light mode auto-switch)</small>
+</p>
+
+<!-- GitHub Profile Trophies (shiny 3D cards) -->
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=Anshu-Gondi&theme=radical&no-frame=true&margin-w=15&margin-h=15&row=1&column=6" alt="GitHub Profile Trophies" onerror="this.src='https://via.placeholder.com/600x150/1e1e1e/ffffff?text=Trophies+Loading...';"/>
+</p>
+
+<!-- Stats Cards (modern animated 3D-style look) -->
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Anshu-Gondi&show_icons=true&theme=radical&hide_border=true&count_private=true" alt="Anshu's GitHub stats" height="180" onerror="this.src='https://via.placeholder.com/400x180/1e1e1e/ffffff?text=Stats+Loading...';"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anshu-Gondi&layout=compact&theme=radical&hide_border=true&langs_count=8" alt="Top Languages" height="180" onerror="this.src='https://via.placeholder.com/400x180/1e1e1e/ffffff?text=Top+Langs+Loading...';"/>
+</p>
 
 ---
 
