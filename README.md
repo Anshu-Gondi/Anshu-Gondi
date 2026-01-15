@@ -15,8 +15,8 @@ Passionate first-year engineering student delivering high-impact projects in ful
 
 - [Tech Stack](#-tech-stack)
 - [Featured Projects](#-featured-projects)
-  - [FinTally — Personal Finance Tracker with AI Insights](#-fintally--personal-finance-tracker-with-ai-insights)
   - [CampusVision — Real-Time Face-Based Attendance System](#-campusvision--real-time-face-based-attendance-system)
+  - [FinTally — Personal Finance Tracker with AI Insights](#-fintally--personal-finance-tracker-with-ai-insights)
   - [Taskflow-Ngnode — AI-Powered Task Management Platform](#-taskflow-ngnode--ai-powered-task-management-platform)
   - [Revenue-AI — Financial Forecasting & EDA Platform](#-revenue-ai--financial-forecasting--eda-platform)
 - [Key Learning Milestones](#-key-learning-milestones)
@@ -54,22 +54,6 @@ PyO3 · FFI · CXX · bindgen · OpenCV-rs · hnsw_rs
 
 ## 🌟 Featured Projects
 
-### 💰 FinTally — Personal Finance Tracker with AI Insights  
-**Status:** Active development (upgrading)
-
-**Tech:** React · Node.js · Django · MongoDB · Rust (performance modules) · **C++ (high-performance computation modules)**
-
-**Key Features:**
-- Recurring transactions, PDF exports, categorized analytics
-- Real-time financial summaries (daily/weekly/lifetime)
-- Advanced hybrid backend: 
-  - Node.js (fast APIs)
-  - Django (data analytics & insights)
-  - Rust (memory-safe, low-latency processing)
-  - **C++ (ultra-high-performance numerical and legacy-compatible modules via FFI/CXX)**
-- Infinite scroll, pagination, responsive UX
-- Planned: AI-powered financial advisor chatbot
-
 ### 🏫 CampusVision — Real-Time Face-Based Attendance System  
 **Status:** In active development
 
@@ -85,6 +69,22 @@ PyO3 · FFI · CXX · bindgen · OpenCV-rs · hnsw_rs
 - Designed for multi-campus, multi-CCTV scalability
 
 **Goal:** Accurate, automated attendance with minimal manual input.
+
+### 💰 FinTally — Personal Finance Tracker with AI Insights  
+**Status:** Active development (upgrading)
+
+**Tech:** React · Node.js · Django · MongoDB · Rust (performance modules) · **C++ (high-performance computation modules)**
+
+**Key Features:**
+- Recurring transactions, PDF exports, categorized analytics
+- Real-time financial summaries (daily/weekly/lifetime)
+- Advanced hybrid backend: 
+  - Node.js (fast APIs)
+  - Django (data analytics & insights)
+  - Rust (memory-safe, low-latency processing)
+  - **C++ (ultra-high-performance numerical and legacy-compatible modules via FFI/CXX)**
+- Infinite scroll, pagination, responsive UX
+- Planned: AI-powered financial advisor chatbot
 
 ### 📂 Taskflow-Ngnode — AI-Powered Task Management Platform  
 **Status:** Complete & deployed
