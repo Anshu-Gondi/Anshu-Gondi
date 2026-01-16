@@ -125,7 +125,9 @@ Completed intensive 2.5-month sprint:
 ### C++ — Modern Systems & Interop  
 Deep expertise in modern C++ (11–23), OOP, STL, templates, RAII, multithreading  
 Heavy focus on **Rust ↔ C++ interop** using CXX, bindgen, and FFI  
-Enables legacy integration and GPU/parallel computing while retaining Rust safety
+Enables legacy integration and GPU/parallel computing while retaining Rust safety  
+
+🔗 [C++-Language-Projects](https://github.com/Anshu-Gondi/CPP-Projects-Beginner-to-Intermediate.git)
 
 ---
 
