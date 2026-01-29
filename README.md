@@ -3,7 +3,7 @@
 > 💼 **Open to internships and remote collaborations** — focused on **systems-oriented full-stack development and applied AI architectures**.
 
 🎓 **B.Tech 1st Year Student (India)**
-💻 **Systems-Focused Full-Stack Developer** · 🤖 **Applied AI / ML Systems Builder** · 🌍 **Open-Source Contributor**
+💻 **Systems-Focused Full-Stack Developer** · 🤖 **Applied AI Systems Builder** · 🌍 **Open-Source Contributor**
 
 ---
 
@@ -17,7 +17,7 @@ I’m particularly interested in **hybrid architectures** where:
 * higher-level orchestration and UX are handled by Python or web frameworks
 * AI components are treated as *untrusted but useful* tools, not sources of truth
 
-I prioritize **shipping, testing, and real usage feedback** over theoretical perfection.
+I started with **low-level languages early in my B.Tech**, which shaped my approach to building safe, performant, and verifiable systems. I prioritize **shipping, testing, and real usage feedback** over theoretical perfection.
 
 ---
 
@@ -145,8 +145,8 @@ FinTally is a personal finance platform built to explore **multi-language backen
 
 ### Systems Programming
 
-* Strong foundations in **C, C++, and Rust**
-* Focus on memory management, ownership models, concurrency, and safe interop
+* Built strong foundations in **C, C++, and Rust** during the first semester of B.Tech
+* Focused on memory management, ownership models, concurrency, and safe interop
 * Experience integrating Rust with Python and C++ in real systems
 
 ### Machine Learning
