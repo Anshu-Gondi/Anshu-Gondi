@@ -3,31 +3,31 @@
 > 💼 **Open to internships and remote collaborations** — focused on **systems-oriented full-stack development and applied AI architectures**.
 
 🎓 **B.Tech 1st Year Student (India)**
-💻 **Systems-Focused Full-Stack Developer** · 🤖 **Applied AI Systems Builder** · 🌍 **Open-Source Contributor**
+💻 **Systems-Oriented Full-Stack Developer** · 🤖 **Applied AI Systems Builder** · 🌍 **Open-Source Contributor**
 
 ---
 
 ## About Me
 
-I’m a first-year engineering student who builds **production-oriented software systems**, not just demos. My work focuses on **clean architecture, correctness boundaries, and performance-aware design**, especially in projects that combine AI with real-world constraints.
+I’m a first-year engineering student who builds **production-oriented software systems**, not just demos. I focus on **clean architecture, correctness boundaries, and performance-aware design**, especially in systems that combine AI with real-world constraints.
 
 I’m particularly interested in **hybrid architectures** where:
 
 * deterministic, safety-critical logic is enforced at the systems level (Rust / C / C++)
-* higher-level orchestration and UX are handled by Python or web frameworks
-* AI components are treated as *untrusted but useful* tools, not sources of truth
+* higher-level orchestration, APIs, and UX are handled by Python or web frameworks
+* AI components are treated as *untrusted but useful* tools, never as sources of truth
 
-I started with **low-level languages early in my B.Tech**, which shaped my approach to building safe, performant, and verifiable systems. I prioritize **shipping, testing, and real usage feedback** over theoretical perfection.
+I started with **low-level languages early in my B.Tech**, which shaped how I think about memory safety, latency, and verifiability. I prioritize **shipping, testing, and real usage feedback** over theoretical perfection.
 
 ---
 
 ## Core Strengths
 
-* Designing **hybrid AI systems** with clear trust boundaries
-* Rust-based performance modules integrated into Python and web stacks
+* Designing **hybrid AI systems** with explicit trust boundaries
+* Rust-based performance engines integrated into Python and web stacks
 * Safe language interop (PyO3, FFI, CXX)
-* Backend systems that emphasize **correctness, observability, and scalability**
-* Turning experimental ideas into **deployable services**
+* Backend systems emphasizing **correctness, observability, and scalability**
+* Turning experimental ideas into **deployable, maintainable services**
 
 ---
 
@@ -43,7 +43,7 @@ React · React Native · Angular
 
 ### Backend & Frameworks
 
-FastAPI · Django · Node.js · Express · Actix (Rust) · Warp (Rust)
+Django · FastAPI · Node.js · Express · **Axum (Rust)** · Actix (Rust) · Warp (Rust)
 
 ### Databases
 
@@ -69,18 +69,17 @@ Docker · Git · Linux · CI-oriented development · Cloud deployments (Render, 
 
 **Status:** In active development
 
-**Tech:** Django REST · React · React Native · PostgreSQL · Rust (core engine) · PyO3
-
 **Overview:**
-CampusVision is a multi-camera, multi-campus attendance platform designed with a **strict separation between AI inference and system correctness**.
+CampusVision is a multi-camera, multi-campus attendance platform designed with a **strict separation between AI inference, system correctness, and API orchestration**.
 
-**Key Design Decisions:**
+**Architecture Highlights:**
 
 * All computer-vision logic (face detection, embeddings, vector search) runs in **Rust** for determinism, memory safety, and predictable latency
-* Python/Django is used strictly for orchestration, APIs, and authentication
-* HNSW-based vector search enables low-latency real-time matching
-* Rust modules are fully tested and validated *before* being exposed to the API layer
-* Frontend access provided via React (dashboard) and React Native (mobile)
+* **Axum (Rust)** is used as a high-throughput web backend for **heavy, performance-critical workloads** (camera ingestion, inference pipelines, vector queries)
+* Django is used strictly for orchestration, authentication, business rules, and REST APIs
+* HNSW-based vector search enables low-latency real-time face matching
+* Rust modules are fully tested and validated *before* being exposed to any API layer
+* Frontend access via React (admin dashboard) and React Native (mobile clients)
 
 **Focus:** Scalability, correctness, and real-world deployment constraints rather than model novelty.
 
@@ -90,23 +89,21 @@ CampusVision is a multi-camera, multi-campus attendance platform designed with a
 
 **Status:** Active development
 
-**Tech:** React · Node.js · Django · MongoDB · Rust · C++
-
 **Overview:**
-FinTally is a personal finance platform built to explore **multi-language backend architectures** and performance-sensitive computation.
+FinTally explores **multi-language backend architectures** and performance-sensitive computation in financial systems.
 
 **Architecture Highlights:**
 
-* Node.js for fast API responses
-* Django for analytics and data processing
+* Node.js for fast user-facing APIs
+* Django for analytics and reporting workflows
 * Rust for memory-safe, low-latency financial computations
 * C++ modules integrated via FFI for high-performance numerical workloads and legacy compatibility
-* Conversational chatbot implemented as a **UX layer** for querying financial data and explaining insights
-* LLM used strictly for intent parsing and natural-language explanations
-* All financial rules, calculations, and validations handled by deterministic Rust backend modules
-* Chatbot outputs are validated and constrained by backend invariants before execution
+* Conversational chatbot implemented strictly as a **UX layer**
+* LLMs used only for intent parsing and natural-language explanations
+* All financial rules, calculations, and validations enforced by deterministic Rust modules
+* Chatbot outputs validated against backend invariants before execution
 
-**Key Learnings:** System boundaries, interop costs, and trade-offs between developer velocity and runtime performance.
+**Key Learnings:** System boundaries, interop costs, and the trade-off between developer velocity and runtime performance.
 
 ---
 
@@ -114,23 +111,19 @@ FinTally is a personal finance platform built to explore **multi-language backen
 
 **Status:** Complete & deployed
 
-**Tech:** Angular · Node.js · FastAPI
-
 **Features:**
 
 * Rule-based + ML-assisted task scheduling
 * Role-based access control and notifications
 * AI services isolated behind a FastAPI microservice
 
-**Focus:** Practical ML integration without coupling core logic to probabilistic components.
+**Focus:** Practical ML integration without coupling core business logic to probabilistic components.
 
 ---
 
 ### 📈 Revenue-AI — Financial Forecasting & EDA Platform
 
 **Status:** Complete & deployed
-
-**Tech:** Django · PyTorch · PostgreSQL · Node.js (proxy)
 
 **Features:**
 
@@ -145,15 +138,15 @@ FinTally is a personal finance platform built to explore **multi-language backen
 
 ### Systems Programming
 
-* Built strong foundations in **C, C++, and Rust** during the first semester of B.Tech
-* Focused on memory management, ownership models, concurrency, and safe interop
-* Experience integrating Rust with Python and C++ in real systems
+* Strong foundations in **C, C++, and Rust** from early B.Tech coursework
+* Focus on memory management, ownership models, concurrency, and safe interop
+* Hands-on experience integrating Rust with Python and C++ in production-style systems
 
 ### Machine Learning
 
 * From exploratory notebooks to modular, reusable pipelines
 * Emphasis on **deployment readiness, reproducibility, and evaluation**
-* Comfortable using ML as a component within larger systems, not in isolation
+* Comfortable treating ML as a component within larger systems—not in isolation
 
 ---
 
@@ -168,7 +161,7 @@ FinTally is a personal finance platform built to explore **multi-language backen
 ## Open Source & Activity
 
 * Active GitHub contributor across full-stack, AI, and systems projects
-* Preference for clean code, tests, and maintainable architectures
+* Preference for clean code, tests, and long-term maintainability
 
 ---
 
