@@ -9,24 +9,28 @@
 
 ## About Me
 
-I’m a first-year engineering student who builds **production-oriented software systems**, not just demos. I focus on **clean architecture, correctness boundaries, and performance-aware design**, especially in systems that combine AI with real-world constraints.
+I’m a first-year engineering student who focuses on **building real, working systems**, not just prototypes or demos. My interest lies at the intersection of **backend systems, performance-aware design, and applied AI**, especially where correctness and real-world constraints matter more than model novelty.
 
-I’m particularly interested in **hybrid architectures** where:
+My journey didn’t start with theory-heavy systems design. I began with **Python and Tkinter**, building small desktop applications and learning how software actually breaks when used by real people. From there, I moved into **web development**, building full-stack applications and gradually introducing data-driven and ML-based components.
 
-* deterministic, safety-critical logic is enforced at the systems level (Rust / C / C++)
-* higher-level orchestration, APIs, and UX are handled by Python or web frameworks
-* AI components are treated as *untrusted but useful* tools, never as sources of truth
+As I worked across **web development and data/ML projects**, I started noticing the limitations of treating everything as a single monolithic web app. This pushed me toward understanding **system boundaries, performance bottlenecks, and reliability guarantees**, which eventually led me to **C, C++, and Rust**.
 
-I started with **low-level languages early in my B.Tech**, which shaped how I think about memory safety, latency, and verifiability. I prioritize **shipping, testing, and real usage feedback** over theoretical perfection.
+Today, I design **hybrid systems** where:
+
+* deterministic and safety-critical logic lives in **Rust / C / C++**
+* higher-level orchestration, APIs, and workflows are handled by **Python and web frameworks**
+* AI is used as a **tool**, not a source of truth
+
+My learning style is **build-first, theory-later**. In many cases, I’ve implemented systems extensively before learning their formal academic terminology. I actively close that gap by revisiting theory after implementation and using it to refine architecture and design decisions.
 
 ---
 
 ## Core Strengths
 
-* Designing **hybrid AI systems** with explicit trust boundaries
-* Rust-based performance engines integrated into Python and web stacks
-* Safe language interop (PyO3, FFI, CXX)
-* Backend systems emphasizing **correctness, observability, and scalability**
+* Designing **hybrid AI systems** with explicit trust and correctness boundaries
+* Performance-oriented backend development using **Rust**
+* Safe multi-language interop (PyO3, FFI, CXX)
+* Backend architectures emphasizing **correctness, observability, and scalability**
 * Turning experimental ideas into **deployable, maintainable services**
 
 ---
@@ -43,11 +47,13 @@ React · React Native · Angular
 
 ### Backend & Frameworks
 
-Django · FastAPI · Node.js · Express · **Axum (Rust)** · Actix (Rust) · Warp (Rust)
+Django · FastAPI · Node.js · Express
+**Axum (Rust)** · Actix (Rust) · Warp (Rust)
 
-### Databases
+### Databases & Storage
 
 PostgreSQL · MySQL · MongoDB
+**MinIO (S3-compatible object storage for images and media)**
 
 ### AI / ML
 
@@ -59,7 +65,8 @@ PyO3 · FFI · CXX · bindgen · OpenCV-rs · hnsw_rs
 
 ### DevOps & Tooling
 
-Docker · Git · Linux · CI-oriented development · Cloud deployments (Render, Railway, GCP)
+Docker · Git · Linux · CI-oriented development
+Cloud deployments (Render, Railway, GCP)
 
 ---
 
@@ -70,18 +77,19 @@ Docker · Git · Linux · CI-oriented development · Cloud deployments (Render, 
 **Status:** In active development
 
 **Overview:**
-CampusVision is a multi-camera, multi-campus attendance platform designed with a **strict separation between AI inference, system correctness, and API orchestration**.
+CampusVision is a **real-time, multi-camera attendance system** designed with a strict separation between **AI inference, system correctness, and application logic**.
 
 **Architecture Highlights:**
 
-* All computer-vision logic (face detection, embeddings, vector search) runs in **Rust** for determinism, memory safety, and predictable latency
-* **Axum (Rust)** is used as a high-throughput web backend for **heavy, performance-critical workloads** (camera ingestion, inference pipelines, vector queries)
-* Django is used strictly for orchestration, authentication, business rules, and REST APIs
+* All computer-vision pipelines (face detection, embeddings, vector search) run in **Rust** for deterministic behavior, memory safety, and predictable latency
+* **Axum (Rust)** handles high-throughput, performance-critical workloads such as camera ingestion and inference pipelines
+* **Django** is used for orchestration, authentication, business rules, and REST APIs
+* **MinIO** is used as object storage for face images and camera snapshots, avoiding misuse of relational databases for binary data
 * HNSW-based vector search enables low-latency real-time face matching
-* Rust modules are fully tested and validated *before* being exposed to any API layer
-* Frontend access via React (admin dashboard) and React Native (mobile clients)
+* Rust modules are validated and tested before being exposed to any API layer
+* Frontend access via **React (admin dashboard)** and **React Native (mobile clients)**
 
-**Focus:** Scalability, correctness, and real-world deployment constraints rather than model novelty.
+**Focus:** Practical deployment, scalability, and correctness under real-world conditions.
 
 ---
 
@@ -90,20 +98,20 @@ CampusVision is a multi-camera, multi-campus attendance platform designed with a
 **Status:** Active development
 
 **Overview:**
-FinTally explores **multi-language backend architectures** and performance-sensitive computation in financial systems.
+FinTally explores **multi-language backend architectures** and correctness-sensitive financial computation.
 
 **Architecture Highlights:**
 
 * Node.js for fast user-facing APIs
 * Django for analytics and reporting workflows
-* Rust for memory-safe, low-latency financial computations
-* C++ modules integrated via FFI for high-performance numerical workloads and legacy compatibility
-* Conversational chatbot implemented strictly as a **UX layer**
-* LLMs used only for intent parsing and natural-language explanations
-* All financial rules, calculations, and validations enforced by deterministic Rust modules
-* Chatbot outputs validated against backend invariants before execution
+* Rust for deterministic, low-latency financial calculations
+* C++ modules integrated via FFI for high-performance numerical workloads
+* Conversational chatbot used strictly as a **UX layer**
+* LLMs limited to intent parsing and explanations
+* All financial rules enforced by deterministic backend logic
+* AI outputs validated against system invariants before execution
 
-**Key Learnings:** System boundaries, interop costs, and the trade-off between developer velocity and runtime performance.
+**Key Learnings:** Interop costs, system boundaries, and performance vs. developer velocity trade-offs.
 
 ---
 
@@ -111,13 +119,13 @@ FinTally explores **multi-language backend architectures** and performance-sensi
 
 **Status:** Complete & deployed
 
-**Features:**
+**Highlights:**
 
-* Rule-based + ML-assisted task scheduling
+* Rule-based core with ML-assisted task prioritization
 * Role-based access control and notifications
-* AI services isolated behind a FastAPI microservice
+* AI isolated behind a FastAPI microservice
 
-**Focus:** Practical ML integration without coupling core business logic to probabilistic components.
+**Focus:** Integrating ML without coupling business logic to probabilistic behavior.
 
 ---
 
@@ -125,7 +133,7 @@ FinTally explores **multi-language backend architectures** and performance-sensi
 
 **Status:** Complete & deployed
 
-**Features:**
+**Highlights:**
 
 * Time-series forecasting and exploratory data analysis
 * Multiple classical and ML models with comparative evaluation
@@ -138,15 +146,15 @@ FinTally explores **multi-language backend architectures** and performance-sensi
 
 ### Systems Programming
 
-* Strong foundations in **C, C++, and Rust** from early B.Tech coursework
-* Focus on memory management, ownership models, concurrency, and safe interop
-* Hands-on experience integrating Rust with Python and C++ in production-style systems
+* Hands-on experience with **C, C++, and Rust**
+* Focus on memory safety, ownership, concurrency, and FFI
+* Practical integration of Rust with Python and C++ in real systems
 
 ### Machine Learning
 
-* From exploratory notebooks to modular, reusable pipelines
-* Emphasis on **deployment readiness, reproducibility, and evaluation**
-* Comfortable treating ML as a component within larger systems—not in isolation
+* From exploratory notebooks to modular pipelines
+* Emphasis on **deployment readiness and reproducibility**
+* ML treated as one component within larger systems
 
 ---
 
@@ -161,7 +169,7 @@ FinTally explores **multi-language backend architectures** and performance-sensi
 ## Open Source & Activity
 
 * Active GitHub contributor across full-stack, AI, and systems projects
-* Preference for clean code, tests, and long-term maintainability
+* Strong preference for clean code, tests, and long-term maintainability
 
 ---
 
@@ -172,4 +180,6 @@ FinTally explores **multi-language backend architectures** and performance-sensi
 
 ---
 
-> *Always building systems that work in practice — not just in theory.*
+> *Focused on building systems that work in practice — and then understanding the theory behind them.*
+
+---
