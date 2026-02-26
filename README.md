@@ -1,37 +1,45 @@
 # 👋 Hi, I’m Anshu Gondi
 
-> 💼 **Open to internships and remote collaborations** — focused on **systems-oriented full-stack development and applied AI architectures**.
+> 💼 Open to internships and remote collaborations
+> Focused on backend systems, performance-aware design, and applied AI under real-world constraints.
 
-🎓 **B.Tech 1st Year Student (India)**
-💻 **Systems-Oriented Full-Stack Developer** · 🤖 **Applied AI Systems Builder** · 🌍 **Open-Source Contributor**
+🎓 B.Tech (1st Year) — India
+💻 Backend & Systems-Focused Developer
+🤖 Applied ML in Production-Oriented Systems
 
 ---
 
 ## About Me
 
-I’m a first-year engineering student who focuses on **building real, working systems**, not just prototypes or demos. My interest lies at the intersection of **backend systems, performance-aware design, and applied AI**, especially where correctness and real-world constraints matter more than model novelty.
+I’m a first-year engineering student focused on building **real, working systems** rather than isolated prototypes.
 
-My journey didn’t start with theory-heavy systems design. I began with **Python and Tkinter**, building small desktop applications and learning how software actually breaks when used by real people. From there, I moved into **web development**, building full-stack applications and gradually introducing data-driven and ML-based components.
+My early work began with Python desktop apps and full-stack web projects. As I moved into ML-backed systems, I started encountering real limitations — performance bottlenecks, system coupling, and architectural rigidity.
 
-As I worked across **web development and data/ML projects**, I started noticing the limitations of treating everything as a single monolithic web app. This pushed me toward understanding **system boundaries, performance bottlenecks, and reliability guarantees**, which eventually led me to **C, C++, and Rust**.
+That pushed me toward:
 
-Today, I design **hybrid systems** where:
+* Understanding performance boundaries
+* Profiling real bottlenecks
+* Designing clearer separation between deterministic logic and AI components
+* Introducing Rust/C++ selectively where constraints demanded it
 
-* deterministic and safety-critical logic lives in **Rust / C / C++**
-* higher-level orchestration, APIs, and workflows are handled by **Python and web frameworks**
-* AI is used as a **tool**, not a source of truth
+I care less about “using advanced tools” and more about:
 
-My learning style is **build-first, theory-later**. In many cases, I’ve implemented systems extensively before learning their formal academic terminology. I actively close that gap by revisiting theory after implementation and using it to refine architecture and design decisions.
+* Why they are used
+* What measurable benefit they provide
+* Whether the added complexity is justified
+
+My approach is iterative:
+Build → Measure → Refactor → Re-measure.
 
 ---
 
-## Core Strengths
+## Core Focus Areas
 
-* Designing **hybrid AI systems** with explicit trust and correctness boundaries
-* Performance-oriented backend development using **Rust**
-* Safe multi-language interop (PyO3, FFI, CXX)
-* Backend architectures emphasizing **correctness, observability, and scalability**
-* Turning experimental ideas into **deployable, maintainable services**
+* Backend systems with explicit correctness boundaries
+* Performance-aware Python systems
+* Selective Rust/C++ integration via FFI (PyO3, CXX)
+* AI used as a bounded tool, not a source of truth
+* Refactoring early-stage projects into production-oriented architectures
 
 ---
 
@@ -39,23 +47,23 @@ My learning style is **build-first, theory-later**. In many cases, I’ve implem
 
 ### Languages
 
-Python · TypeScript · JavaScript · Rust · C++ · C · SQL
+Python · Rust · C++ · C · TypeScript · SQL
+
+### Backend
+
+Django · FastAPI · Node.js · Express
+Axum (Rust) · Actix (Rust)
 
 ### Frontend
 
 React · React Native · Angular
 
-### Backend & Frameworks
-
-Django · FastAPI · Node.js · Express
-**Axum (Rust)** · Actix (Rust) · Warp (Rust)
-
 ### Databases & Storage
 
 PostgreSQL · MySQL · MongoDB
-**MinIO (S3-compatible object storage for images and media)**
+MinIO (S3-compatible object storage)
 
-### AI / ML
+### ML / Data
 
 PyTorch · Scikit-learn · NumPy · Pandas · ONNX Runtime
 
@@ -63,123 +71,140 @@ PyTorch · Scikit-learn · NumPy · Pandas · ONNX Runtime
 
 PyO3 · FFI · CXX · bindgen · OpenCV-rs · hnsw_rs
 
-### DevOps & Tooling
+### DevOps
 
-Docker · Git · Linux · CI-oriented development
-Cloud deployments (Render, Railway, GCP)
-
----
-
-## Featured Projects
-
-### 🏫 CampusVision — Real-Time Face-Based Attendance System
-
-**Status:** In active development
-
-**Overview:**
-CampusVision is a **real-time, multi-camera attendance system** designed with a strict separation between **AI inference, system correctness, and application logic**.
-
-**Architecture Highlights:**
-
-* All computer-vision pipelines (face detection, embeddings, vector search) run in **Rust** for deterministic behavior, memory safety, and predictable latency
-* **Axum (Rust)** handles high-throughput, performance-critical workloads such as camera ingestion and inference pipelines
-* **Django** is used for orchestration, authentication, business rules, and REST APIs
-* **MinIO** is used as object storage for face images and camera snapshots, avoiding misuse of relational databases for binary data
-* HNSW-based vector search enables low-latency real-time face matching
-* Rust modules are validated and tested before being exposed to any API layer
-* Frontend access via **React (admin dashboard)** and **React Native (mobile clients)**
-
-**Focus:** Practical deployment, scalability, and correctness under real-world conditions.
+Docker · Linux · Git · CI pipelines
+Deployments on Render, Railway, GCP
 
 ---
 
-### 💰 FinTally — Personal Finance Tracker with AI Insights
-
-**Status:** Active development
-
-**Overview:**
-FinTally explores **multi-language backend architectures** and correctness-sensitive financial computation.
-
-**Architecture Highlights:**
-
-* Node.js for fast user-facing APIs
-* Django for analytics and reporting workflows
-* Rust for deterministic, low-latency financial calculations
-* C++ modules integrated via FFI for high-performance numerical workloads
-* Conversational chatbot used strictly as a **UX layer**
-* LLMs limited to intent parsing and explanations
-* All financial rules enforced by deterministic backend logic
-* AI outputs validated against system invariants before execution
-
-**Key Learnings:** Interop costs, system boundaries, and performance vs. developer velocity trade-offs.
+# Featured Projects
 
 ---
 
-### 📂 Taskflow-Ngnode — AI-Assisted Task Management Platform
+## 🏫 CampusVision
 
-**Status:** Complete & deployed
+Real-Time Face-Based Attendance System
+**Status:** Active Development
+**Hardware Baseline:** Intel Celeron N4020 (Gemini Lake, 2017) · 2C/2T · 1.10GHz · No GPU acceleration
 
-**Highlights:**
+### Engineering Context
 
-* Rule-based core with ML-assisted task prioritization
-* Role-based access control and notifications
-* AI isolated behind a FastAPI microservice
+All inference benchmarks are measured on:
 
-**Focus:** Integrating ML without coupling business logic to probabilistic behavior.
+* Intel Celeron N4020
+* 2 cores / 2 threads
+* 8GB RAM
+* CPU-only execution
+* Single-machine deployment
 
----
+The goal is to understand system behavior under constrained compute rather than relying on high-performance hardware.
 
-### 📈 Revenue-AI — Financial Forecasting & EDA Platform
+### Architecture
 
-**Status:** Complete & deployed
+* Face detection, embeddings, and HNSW vector search implemented in Rust
+* Axum for performance-sensitive ingestion endpoints
+* Django for orchestration and authentication
+* MinIO for object storage
+* React / React Native clients
 
-**Highlights:**
+### Current Focus
 
-* Time-series forecasting and exploratory data analysis
-* Multiple classical and ML models with comparative evaluation
-* Exportable results (CSV, Excel, JSON)
-* Secure authentication (JWT + OAuth2)
-
----
-
-## Learning & Systems Background
-
-### Systems Programming
-
-* Hands-on experience with **C, C++, and Rust**
-* Focus on memory safety, ownership, concurrency, and FFI
-* Practical integration of Rust with Python and C++ in real systems
-
-### Machine Learning
-
-* From exploratory notebooks to modular pipelines
-* Emphasis on **deployment readiness and reproducibility**
-* ML treated as one component within larger systems
+* Measuring end-to-end latency on CPU-only inference
+* Profiling Python vs Rust boundaries (PyO3 overhead)
+* Determining if Rust gains justify architectural complexity
+* Evaluating scaling behavior as face count increases
 
 ---
 
-## Security & Authentication
+## 💰 FinTally
 
-* JWT-based authentication flows
-* OAuth 2.0 (Google)
-* Secure token handling and session design
+Personal Finance Tracker with Deterministic Computation Core
+**Status:** Active Development
+**Hardware Baseline:** Intel Celeron N4020 · 2C/2T · No distributed infra
+
+### Engineering Context
+
+Developed and tested entirely on low-power CPU hardware.
+
+* No microservice deployment in production
+* No horizontal scaling
+* No assumed concurrency beyond hardware limits
+
+### Architecture
+
+* Node.js API layer
+* Django analytics workflows
+* Rust modules for financial aggregation
+* Selective C++ interop via FFI
+* LLM restricted to UX layer only
+
+### Current Focus
+
+* Profiling financial aggregation bottlenecks
+* Comparing pure Python vs Rust performance on low-core CPU
+* Measuring actual latency gains vs added maintenance cost
+* Avoiding premature distributed architecture
 
 ---
 
-## Open Source & Activity
+## 📂 Taskflow-Ngnode
 
-* Active GitHub contributor across full-stack, AI, and systems projects
-* Strong preference for clean code, tests, and long-term maintainability
+AI-Assisted Task Management Platform
+**Status:** Complete & Deployed
+**Hardware Baseline:** Developed on Intel Celeron N4020 · CPU-only
+
+### Engineering Context
+
+Designed without assuming GPU or high-core systems.
+
+* ML isolated behind FastAPI service
+* Single-node deployment
+* Focus on separation of probabilistic scoring and deterministic task logic
+
+Emphasis: maintainability under resource constraints.
 
 ---
 
-## Connect
+## 📈 Revenue-AI
 
-📧 **Email:** [agondi982@gmail.com](mailto:agondi982@gmail.com)
-📺 **YouTube:** @ag_youtube
+Financial Forecasting & EDA Platform
+**Status:** Complete & Deployed
+**Hardware Baseline:** Intel Celeron N4020 · CPU-only ML workloads
+
+### Engineering Context
+
+* CPU-only model training and inference
+* No distributed compute
+* Early-stage profiling discipline (being revisited)
+
+This project represents my initial ML systems phase before adopting stronger performance-measurement practices in later projects.
+
+# Engineering Philosophy
+
+I prefer:
+
+* Measured claims over adjectives
+* Explicit bottlenecks over assumed ones
+* Refactoring over constant new project creation
+* Deterministic logic owning business-critical decisions
+
+I am currently focused on strengthening:
+
+* Profiling discipline
+* Performance benchmarking
+* Concurrency design
+* Production-hardening existing systems
 
 ---
 
-> *Focused on building systems that work in practice — and then understanding the theory behind them.*
+## Contact
+
+📧 [agondi982@gmail.com](mailto:agondi982@gmail.com)
+📺 YouTube: @ag_youtube
+
+---
+
+> Build first. Measure honestly. Refactor intentionally.
 
 ---
