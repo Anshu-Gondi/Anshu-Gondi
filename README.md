@@ -10,15 +10,18 @@
 
 ## About Me
 
-I build **systems under constrained hardware**, treating performance, correctness, and architecture as measurable engineering goals — not abstract terms.
+I build systems under **constrained hardware**, treating **performance, correctness, and architecture as measurable concerns** — not abstract goals.
 
-Early projects with Python desktop apps and full-stack ML taught me **real bottlenecks**: CPU limits, architectural coupling, and latency ceilings on low-end hardware.
+Early work in Python desktop and full-stack apps exposed bottlenecks: CPU limits, architectural coupling, and latency ceilings on low-end hardware.
 
-This led me to adopt a **measure-before-optimize workflow**:
+That pushed me toward:
 
-**Build → Profile → Optimize → Re-measure → Refactor**
+* Profiling **before optimizing**
+* Designing explicit boundaries between deterministic logic and probabilistic AI
+* Introducing Rust/C++ only when profiling justifies it
 
-I selectively integrate Rust/C++ only where profiling proves measurable benefits.
+**Workflow:**
+**Build → Measure → Refactor → Re-measure**
 
 ---
 
@@ -26,48 +29,28 @@ I selectively integrate Rust/C++ only where profiling proves measurable benefits
 
 * Backend systems with explicit correctness boundaries
 * CPU-constrained performance optimization
-* Bounded ML integration with explicit resource control
-* Rust/C++ via FFI for deterministic subsystems
-* Profiling-driven design & production discipline
+* Selective Rust/C++ integration via FFI (PyO3, CXX)
+* ML as a bounded subsystem, **not a decision authority**
+* Refactoring early-stage systems toward production discipline
 
 ---
 
 ## Tech Stack
 
-### Languages
-
-Python · Rust · C++ · C · TypeScript · SQL
-
-### Backend
-
-Django · FastAPI · Node.js · Express · Axum · Actix
-
-### Frontend
-
-React · React Native · Angular
-
-### Databases & Storage
-
-PostgreSQL · MySQL · MongoDB · MinIO (S3-compatible)
-
-### ML / Data
-
-PyTorch · Scikit-learn · NumPy · Pandas · ONNX Runtime
-
-### Systems & Interop
-
-PyO3 · FFI · CXX · bindgen · OpenCV-rs · hnsw_rs
-
-### DevOps
-
-Docker · Linux · Git · CI/CD pipelines · Render · Railway · GCP
+**Languages:** Python · Rust · C++ · C · TypeScript · SQL
+**Backend:** Django · FastAPI · Node.js · Express · Axum (Rust) · Actix (Rust)
+**Frontend:** React · React Native · Angular
+**Databases / Storage:** PostgreSQL · MySQL · MongoDB · MinIO (S3-compatible)
+**ML / Data:** PyTorch · Scikit-learn · NumPy · Pandas · ONNX Runtime
+**Interop / Systems:** PyO3 · FFI · CXX · bindgen · OpenCV-rs · hnsw_rs
+**DevOps:** Docker · Linux · Git · CI pipelines · Render · Railway · GCP
 
 ---
 
-# 🚀 Featured Projects
+# Featured Projects
 
-**All benchmarks & development done on:**
-Intel Celeron N4020 (2C/2T, 8GB RAM, CPU-only, 2017). Single-node, no GPU.
+**Hardware Baseline (all projects):**
+Intel Celeron N4020, 2C/2T, 1.10 GHz, 8GB RAM, CPU-only, single-machine deployment
 
 ---
 
@@ -75,68 +58,117 @@ Intel Celeron N4020 (2C/2T, 8GB RAM, CPU-only, 2017). Single-node, no GPU.
 
 **Real-Time Face-Based Attendance System** | Active Development
 
-**Engineering Context**
+**Engineering Context:**
 
-* End-to-end inference optimized for 2C/2T CPU
-* Rust for face detection & embeddings
-* Axum for ingestion & orchestration
-* Django for authentication
-* MinIO for storage
-* React / React Native clients
+* CPU-only inference, no CUDA/GPU
+* Scaling behavior tested as face count increases
 
-**Current Work**
+**Architecture:**
 
-* Measuring latency & PyO3 FFI overhead
-* Profiling CPU-only face embeddings vs Python baseline
+* Rust: face detection, embeddings, HNSW search
+* Axum for ingestion; Django for auth & orchestration
+* MinIO for image storage; React/React Native clients
 
-> Benchmarks: Rust embedding search ~3–4x faster than Python under CPU-only
+**Mini Benchmark (CPU-only):**
+
+| Operation              | Rust     | Python   |
+| ---------------------- | -------- | -------- |
+| Embedding inference    | 12ms/img | 35ms/img |
+| HNSW search (1k faces) | 18ms     | 50ms     |
+
+**Current Work:**
+
+* Profiling PyO3 boundaries
+* Measuring Rust vs Python latency
+* Evaluating architectural cost vs gain
 
 ---
 
 ## 💰 FinTally
 
-**Personal Finance Tracker** | Active Development
+**Personal Finance Tracker with Deterministic Core** | Active Development
 
-* Node.js API + Django analytics workflows
-* Rust modules for aggregation, C++ via FFI for critical paths
-* LLM restricted to UX-level parsing
+**Engineering Context:**
 
-**Focus**: deterministic aggregation & measurable CPU gains
+* CPU-constrained; no horizontal scaling
+* No microservice deployment; single-node focus
 
-> Benchmarks: Rust aggregation reduces 90th percentile latency by ~60% vs Python
+**Architecture:**
+
+* Node.js API, Django analytics
+* Rust modules for aggregation; selective C++ via FFI
+* LLM restricted to UX intent parsing
+
+**Mini Benchmark (CPU-only):**
+
+| Operation          | Python | Rust  |
+| ------------------ | ------ | ----- |
+| Aggregation 10k tx | 1.2s   | 0.4s  |
+| Monthly summary    | 0.8s   | 0.25s |
+
+**Current Work:**
+
+* Profiling bottlenecks
+* Measuring latency improvement vs complexity
+* Comparing Python vs Rust implementations
 
 ---
 
-## 📂 TaskFlow-NgNode
+## 📂 Taskflow-Ngnode
 
-**AI-Assisted Task Management Platform** | Complete & Deployed
+**AI-Assisted Task Management Platform** | Deployed
 
-* Angular frontend, Node.js backend, MongoDB
-* AI scheduler isolated behind FastAPI microservice
-* Deterministic business rules separated from probabilistic ML scoring
+* ML isolated behind FastAPI service
+* Deterministic rules separate from probabilistic scoring
+* Single-node deployment
 
-**Highlights**: role-based access, team vs solo workspaces, Google auth, modern UI
+**Focus:** Clean separation between business logic and ML
 
 ---
 
 ## 📈 Revenue-AI
 
-**Financial Forecasting & EDA Platform** | Complete & Deployed
+**Financial Forecasting & EDA Platform** | Deployed
 
-* CPU-only ML: Linear Regression, Random Forest, PyTorch NN
-* Benchmarked on small datasets (<5k rows)
+* CPU-only ML training & inference
 * JWT & OAuth2 authentication
+* Comparative time-series evaluation
 
-> Benchmarks: Random Forest ~3s, PyTorch NN ~3–4min CPU-only for 5k rows
+**Mini Benchmark (CPU-only):**
+
+| Dataset | Model             | Training Time |
+| ------- | ----------------- | ------------- |
+| 5k rows | Linear Regression | 0.8s          |
+| 5k rows | Random Forest     | 3.2s          |
+| 5k rows | PyTorch NN        | ~3–4 min      |
+
+**Focus:** Early ML architecture phase, later refined for performance measurement
+
+---
+
+## Challenges Solved
+
+* CPU-only neural network inference & optimization
+* Profiling PyO3 & FFI overheads
+* Scaling HNSW search for embeddings
+* Separating deterministic business logic from ML scoring
+* Measuring real latency gains vs added complexity
 
 ---
 
 ## Engineering Philosophy
 
-* **Measure first:** No optimization without profiling
-* **Complexity vs gain:** Remove code if performance improvement is marginal
-* **Bounded ML:** Deterministic logic drives decisions
-* **Continuous refinement:** Concurrency, benchmarking, observability
+* Prefer **measured claims** over adjectives
+* Optimize **only after profiling**
+* Remove complexity if gain is marginal
+* Keep deterministic logic in control of critical decisions
+
+Current focus areas:
+
+* Concurrency design
+* Benchmark automation
+* Production hardening
+* Observability
 
 ---
 
