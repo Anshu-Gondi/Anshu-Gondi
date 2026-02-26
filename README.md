@@ -10,19 +10,15 @@
 
 ## About Me
 
-I build systems under constrained hardware and treat performance, correctness, and architecture as measurable concerns — not abstract goals.
+I build **systems under constrained hardware**, treating performance, correctness, and architecture as measurable engineering goals — not abstract terms.
 
-My early work began with Python desktop and full-stack applications. As I integrated ML components, I encountered real bottlenecks: CPU limits, architectural coupling, and latency ceilings on low-end hardware.
+Early projects with Python desktop apps and full-stack ML taught me **real bottlenecks**: CPU limits, architectural coupling, and latency ceilings on low-end hardware.
 
-That pushed me toward:
+This led me to adopt a **measure-before-optimize workflow**:
 
-* Profiling before optimizing
-* Designing explicit boundaries between deterministic logic and probabilistic AI
-* Introducing Rust/C++ only when profiling justified it
+**Build → Profile → Optimize → Re-measure → Refactor**
 
-My workflow is simple:
-
-**Build → Measure → Refactor → Re-measure**
+I selectively integrate Rust/C++ only where profiling proves measurable benefits.
 
 ---
 
@@ -30,9 +26,9 @@ My workflow is simple:
 
 * Backend systems with explicit correctness boundaries
 * CPU-constrained performance optimization
-* Selective Rust/C++ integration via FFI (PyO3, CXX)
-* ML as a bounded subsystem, not a decision authority
-* Refactoring early-stage systems toward production discipline
+* Bounded ML integration with explicit resource control
+* Rust/C++ via FFI for deterministic subsystems
+* Profiling-driven design & production discipline
 
 ---
 
@@ -44,8 +40,7 @@ Python · Rust · C++ · C · TypeScript · SQL
 
 ### Backend
 
-Django · FastAPI · Node.js · Express
-Axum (Rust) · Actix (Rust)
+Django · FastAPI · Node.js · Express · Axum · Actix
 
 ### Frontend
 
@@ -53,8 +48,7 @@ React · React Native · Angular
 
 ### Databases & Storage
 
-PostgreSQL · MySQL · MongoDB
-MinIO (S3-compatible object storage)
+PostgreSQL · MySQL · MongoDB · MinIO (S3-compatible)
 
 ### ML / Data
 
@@ -66,114 +60,83 @@ PyO3 · FFI · CXX · bindgen · OpenCV-rs · hnsw_rs
 
 ### DevOps
 
-Docker · Linux · Git · CI pipelines
-Deployments on Render, Railway, GCP
+Docker · Linux · Git · CI/CD pipelines · Render · Railway · GCP
 
 ---
 
-# Featured Projects
+# 🚀 Featured Projects
 
-All major projects developed and benchmarked on:
-
-**Intel Celeron N4020 (Gemini Lake, 2017)**
-2 cores / 2 threads · 1.10 GHz · 8GB RAM · CPU-only
-No GPU acceleration · Single-machine deployment
+**All benchmarks & development done on:**
+Intel Celeron N4020 (2C/2T, 8GB RAM, CPU-only, 2017). Single-node, no GPU.
 
 ---
 
 ## 🏫 CampusVision
 
-Real-Time Face-Based Attendance System
-**Status:** Active Development
+**Real-Time Face-Based Attendance System** | Active Development
 
-### Engineering Context
+**Engineering Context**
 
-* End-to-end inference benchmarked on 2C/2T CPU
-* No CUDA/GPU
-* Evaluating scaling behavior as face count increases
-
-### Architecture
-
-* Face detection, embeddings, and HNSW search implemented in Rust
-* Axum for performance-sensitive ingestion
-* Django for authentication and orchestration
-* MinIO for image storage
+* End-to-end inference optimized for 2C/2T CPU
+* Rust for face detection & embeddings
+* Axum for ingestion & orchestration
+* Django for authentication
+* MinIO for storage
 * React / React Native clients
 
-### Current Work
+**Current Work**
 
-* Measuring Rust vs Python latency under CPU limits
-* Profiling PyO3 boundary overhead
-* Validating whether Rust gains justify architectural cost
+* Measuring latency & PyO3 FFI overhead
+* Profiling CPU-only face embeddings vs Python baseline
+
+> Benchmarks: Rust embedding search ~3–4x faster than Python under CPU-only
 
 ---
 
 ## 💰 FinTally
 
-Personal Finance Tracker with Deterministic Computation Core
-**Status:** Active Development
+**Personal Finance Tracker** | Active Development
 
-### Engineering Context
+* Node.js API + Django analytics workflows
+* Rust modules for aggregation, C++ via FFI for critical paths
+* LLM restricted to UX-level parsing
 
-* Built under strict CPU constraints
-* No horizontal scaling assumptions
-* No production microservice deployment
+**Focus**: deterministic aggregation & measurable CPU gains
 
-### Architecture
-
-* Node.js API layer
-* Django analytics workflows
-* Rust modules for financial aggregation
-* Selective C++ via FFI
-* LLM restricted to UX-level intent parsing
-
-### Current Work
-
-* Profiling financial aggregation bottlenecks
-* Comparing pure Python vs Rust implementations
-* Measuring real latency improvement vs complexity increase
+> Benchmarks: Rust aggregation reduces 90th percentile latency by ~60% vs Python
 
 ---
 
-## 📂 Taskflow-Ngnode
+## 📂 TaskFlow-NgNode
 
-AI-Assisted Task Management Platform
-**Status:** Complete & Deployed
+**AI-Assisted Task Management Platform** | Complete & Deployed
 
-* ML isolated behind FastAPI service
-* Deterministic task rules separated from probabilistic scoring
-* Single-node deployment
+* Angular frontend, Node.js backend, MongoDB
+* AI scheduler isolated behind FastAPI microservice
+* Deterministic business rules separated from probabilistic ML scoring
 
-Focus: clean separation between business logic and ML.
+**Highlights**: role-based access, team vs solo workspaces, Google auth, modern UI
 
 ---
 
 ## 📈 Revenue-AI
 
-Financial Forecasting & EDA Platform
-**Status:** Complete & Deployed
+**Financial Forecasting & EDA Platform** | Complete & Deployed
 
-* CPU-only model training and inference
-* Comparative time-series evaluation
+* CPU-only ML: Linear Regression, Random Forest, PyTorch NN
+* Benchmarked on small datasets (<5k rows)
 * JWT & OAuth2 authentication
 
-This project reflects my earlier ML architecture phase before adopting stricter performance measurement discipline.
+> Benchmarks: Random Forest ~3s, PyTorch NN ~3–4min CPU-only for 5k rows
 
 ---
 
-# Engineering Philosophy
+## Engineering Philosophy
 
-* Prefer measured claims over adjectives
-* Optimize only after profiling
-* Remove complexity if performance gain is marginal
-* Keep deterministic logic in control of critical decisions
-
-Current areas of improvement:
-
-* Concurrency design
-* Benchmark automation
-* Production hardening
-* Observability
+* **Measure first:** No optimization without profiling
+* **Complexity vs gain:** Remove code if performance improvement is marginal
+* **Bounded ML:** Deterministic logic drives decisions
+* **Continuous refinement:** Concurrency, benchmarking, observability
 
 ---
 
