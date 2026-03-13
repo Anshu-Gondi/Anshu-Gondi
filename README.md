@@ -1,171 +1,246 @@
 # 👋 Hi, I’m Anshu Gondi
 
-**Open to internships and remote collaborations**  
-**Focused on backend systems, performance-aware design, and applied ML under real-world constraints**
+**Backend & Systems-Focused Developer building performance-aware software under real-world constraints.**
 
-🎓 B.Tech (1st Year) — India  
-💻 Backend & Systems-Focused Developer
+🎓 B.Tech (1st Year) — India
+💻 Interested in **systems engineering, financial software, and high-performance backend infrastructure**
 
----
-
-## About Me
-
-I build systems that run efficiently under **constrained hardware**, treating **performance**, **correctness**, and **architecture** as **measurable engineering concerns** — not vague aspirations.
-
-Early Python desktop and full-stack projects revealed hard limits: CPU bottlenecks, tight architectural coupling, and latency ceilings on low-end devices. This drove me toward deliberate practices:
-
-- Profiling **before** any optimization
-- Designing clear boundaries between deterministic logic and probabilistic ML
-- Introducing Rust or C++ **only** when profiling shows meaningful gains
-
-**Core workflow:** Build → Measure → Refactor → Re-measure
+Open to **internships, backend roles, and technical collaborations.**
 
 ---
 
-## Core Focus Areas
+# About Me
 
-- Backend systems with explicit correctness & safety boundaries
-- Performance optimization on CPU-constrained environments
-- Selective Rust/C++ integration via FFI (PyO3, CXX)
-- Treating ML as a **bounded subsystem**, never the decision authority
-- Refactoring early-stage codebases toward production-grade discipline
+I design backend systems that prioritize **correctness, performance, and measurable system behavior**, especially in **CPU-constrained environments**.
+
+Working on low-resource hardware pushed me to treat system performance as an **engineering problem that must be measured**, not assumed.
+
+My development workflow emphasizes:
+
+* **Profiling before optimization**
+* **Clear boundaries between deterministic logic and ML subsystems**
+* **Introducing Rust or C++ only when benchmarks justify it**
+
+Core workflow:
+
+```
+Build → Measure → Refactor → Re-measure
+```
+
+My long-term goal is to build **reliable financial and analytical software platforms used at scale.**
 
 ---
 
-## Tech Stack
+# Core Engineering Focus
 
-**Languages**  
+**Backend Systems**
+
+* Performance-aware backend architectures
+* Explicit correctness and safety boundaries
+* Latency-focused design in constrained environments
+
+**Systems Performance**
+
+* Rust and C++ acceleration through FFI
+* Profiling-driven optimization
+* Quantifying complexity vs measurable performance gains
+
+**Financial Software**
+
+* Transaction analytics pipelines
+* Deterministic financial computation systems
+* Reliable data processing infrastructure
+
+**Machine Learning Integration**
+
+* ML treated strictly as a **bounded subsystem**
+* Deterministic business logic retains final authority
+
+---
+
+# Technical Stack
+
+**Languages**
+
 Python · Rust · C++ · C · TypeScript · SQL
 
-**Backend**  
-FastAPI · Django · Axum (Rust) · Actix Web (Rust) · Node.js / Express
+**Backend**
 
-**Frontend**  
-React · React Native · Angular
+FastAPI · Django · Axum (Rust) · Actix Web · Node.js / Express
 
-**Databases & Storage**  
-PostgreSQL · MySQL · MongoDB · MinIO (S3-compatible)
+**Databases**
 
-**ML & Data**  
+PostgreSQL · MySQL · MongoDB · MinIO
+
+**Machine Learning**
+
 PyTorch · scikit-learn · NumPy · Pandas · ONNX Runtime
 
-**Interop & Systems**  
+**Systems / Interoperability**
+
 PyO3 · CXX · bindgen · OpenCV-rs · hnsw_rs
 
-**DevOps & Tools**  
-Docker · Linux · Git · CI/CD pipelines · Render · Railway · GCP
+**Infrastructure**
+
+Docker · Linux · Git · CI/CD · Render · Railway · GCP
 
 ---
 
-## Featured Projects
+# Flagship Project
 
-**All projects are benchmarked on the same constrained baseline hardware:**  
-Intel Celeron N4020 (2C/2T @ 1.10 GHz), 8 GB RAM, CPU-only, single-machine deployment
+## 🏫 CampusVision
 
-### 🏫 CampusVision  
-**Real-Time Face-Based Attendance System** | In active development
+**Real-Time Face-Based Attendance Infrastructure (In Development)**
 
-**Key constraints & decisions**  
-- CPU-only inference (no CUDA/GPU)  
-- Scaling behavior validated with increasing face counts
+CampusVision is designed as a **reliable classroom attendance system operating on CPU-only hardware**.
 
-**Architecture**  
-- Rust: face detection, embeddings generation, HNSW approximate nearest-neighbor search  
-- Axum (Rust) for high-performance ingestion API  
-- Django for authentication & orchestration  
-- MinIO for image/object storage  
-- React + React Native clients
+The system combines **computer vision, high-performance backend infrastructure, and scalable identity search** to automate classroom attendance while remaining deployable on low-cost hardware.
 
-**Mini Benchmark (CPU-only)**
+### Architecture
 
-| Operation                  | Rust     | Python   |
-|----------------------------|----------|----------|
-| Embedding inference (per image) | 12 ms   | 35 ms   |
-| HNSW search (1,000 faces)  | 18 ms   | 50 ms   |
+Detection & Recognition
 
-**Current focus**  
-- Profiling PyO3 boundary overhead  
-- Quantifying Rust vs Python latency trade-offs  
-- Evaluating architectural complexity vs performance gain
+* Face detection using YuNet
+* Embedding generation using ArcFace
 
-### 💰 FinTally  
-**Personal Finance Tracker with Deterministic Core** | In active development
+Performance Layer
 
-**Key constraints**  
-- Single-node, CPU-constrained (no horizontal scaling or microservices)
+* Rust-based embedding processing
+* HNSW approximate nearest-neighbor search using
+  Hierarchical Navigable Small World
 
-**Architecture**  
-- Node.js API + Django analytics backend  
-- Rust modules for high-speed aggregation  
-- Selective C++ via FFI for critical paths  
-- LLM used only for UX intent parsing (never for core logic)
+Backend
 
-**Mini Benchmark (CPU-only)**
+* Axum (Rust) ingestion APIs
+* Django authentication and orchestration
+* MinIO object storage
 
-| Operation             | Python | Rust  |
-|-----------------------|--------|-------|
-| Aggregation (10k tx)  | 1.2 s | 0.4 s |
-| Monthly summary       | 0.8 s | 0.25 s|
+Client Interfaces
 
-**Current focus**  
-- Identifying remaining bottlenecks  
-- Measuring latency gains against added complexity
+* React web dashboard
+* React Native mobile client
 
-### 📂 Taskflow-Ngnode  
-**AI-Assisted Task Management Platform** | Deployed
+### Deployment Strategy
 
-- ML isolated behind FastAPI microservice  
-- Strict separation: deterministic rules vs probabilistic scoring  
-- Single-node deployment
+* Primary recognition via **webcam / mobile camera**
+* CCTV used for **verification and audit trail**
+* Location-aware indexing for scalable identity search
 
-**Philosophy**  
-Clean decoupling of business logic from ML components
+### Benchmark Environment
 
-### 📈 Revenue-AI  
-**Financial Forecasting & EDA Platform** | Deployed
+All performance benchmarks run on the same baseline hardware:
 
-- CPU-only training & inference pipelines  
-- JWT + OAuth2 authentication  
-- Comparative evaluation of time-series models
+```
+Intel Celeron N4020
+2 cores / 2 threads
+8GB RAM
+CPU-only inference
+```
 
-**Mini Benchmark (CPU-only, 5k rows)**
+### Sample Benchmarks
 
-| Model              | Training Time    |
-|--------------------|------------------|
-| Linear Regression  | 0.8 s           |
-| Random Forest      | 3.2 s           |
-| PyTorch NN         | ~3–4 min        |
+| Operation                | Rust  | Python |
+| ------------------------ | ----- | ------ |
+| Embedding inference      | 12 ms | 35 ms  |
+| HNSW search (1000 faces) | 18 ms | 50 ms  |
 
-**Focus**  
-Early-stage ML architecture, later refined with rigorous performance measurement
+### Current Focus
+
+* Multi-frame recognition validation
+* Location-based face index architecture
+* Real-classroom pilot deployment
 
 ---
 
-## Challenges I’ve Tackled
+# FinTech Project
 
-- Efficient CPU-only neural network inference & optimization
-- Measuring & minimizing PyO3 / FFI boundary overhead
-- Scaling HNSW-based embedding search under memory/CPU limits
-- Enforcing separation between deterministic business rules and ML outputs
-- Quantifying actual latency wins vs added system complexity
+## 💰 FinTally
+
+**Deterministic Personal Finance Analytics System**
+
+FinTally is a financial analytics platform focused on **transparent financial computation rather than opaque AI-driven automation.**
+
+### Architecture
+
+Backend
+
+* Node.js transaction ingestion
+* Django analytics engine
+
+Performance Layer
+
+* Rust aggregation modules
+* Selective C++ acceleration
+
+ML Usage
+
+* LLM used only for **intent parsing**
+* Core financial logic remains deterministic
+
+### Benchmarks
+
+| Operation                      | Python | Rust   |
+| ------------------------------ | ------ | ------ |
+| Aggregation (10k transactions) | 1.2 s  | 0.4 s  |
+| Monthly summary                | 0.8 s  | 0.25 s |
 
 ---
 
-## Engineering Philosophy
+# Experimental Projects
 
-- Prefer **measured claims** over adjectives
-- Optimize **only after profiling**
-- Ruthlessly remove complexity when gains are marginal
-- Keep deterministic logic in full control of critical decisions
+## 📈 Revenue-AI
 
-**Current priorities**  
-- Effective concurrency design  
-- Automated benchmarking pipelines  
-- Production hardening & observability
+Financial forecasting and exploratory data analysis platform for testing **time-series models under CPU-only environments.**
+
+Focus:
+
+* model comparison
+* training efficiency
+* system performance profiling
 
 ---
 
-📧 [agondi982@gmail.com](mailto:agondi982@gmail.com)  
-📺 YouTube: [@ag_youtube](https://www.youtube.com/@ag_youtube)
+## 📂 Taskflow-Ngnode
+
+AI-assisted task management platform demonstrating **clean separation between deterministic rules and ML scoring systems.**
+
+---
+
+# Engineering Challenges Explored
+
+* CPU-efficient neural network inference
+* Measuring PyO3 / FFI boundary overhead
+* Scaling approximate nearest-neighbor search
+* Maintaining deterministic control over ML outputs
+* Evaluating complexity vs measurable performance gains
+
+---
+
+# Engineering Philosophy
+
+* Prefer **measured claims over adjectives**
+* Optimize **only after profiling**
+* Remove complexity when gains are marginal
+* Keep deterministic systems in control of critical decisions
+
+---
+
+# Current Technical Priorities
+
+* Concurrency patterns in backend systems
+* Automated benchmarking pipelines
+* Production observability and system instrumentation
+
+---
+
+📧 **Email**
+[agondi982@gmail.com](mailto:agondi982@gmail.com)
+
+📺 **YouTube**
+[https://www.youtube.com/@ag_youtube](https://www.youtube.com/@ag_youtube)
+
+---
 
 > Build under constraints. Measure honestly. Refactor intentionally.
+
+---
