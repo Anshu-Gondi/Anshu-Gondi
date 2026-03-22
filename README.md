@@ -1,7 +1,6 @@
-
 # 👋 Hi, I’m Anshu Gondi
 
-**Backend & Systems-Focused Developer** building performance-aware software under real-world constraints.
+**Systems & Backend Developer focused on performance, FFI-based optimization, and CPU-constrained environments.**
 
 🎓 B.Tech (1st Year) — India  
 💻 Interested in **systems engineering**, **financial software**, and **high-performance backend infrastructure**
@@ -33,24 +32,10 @@ Long-term goal: reliable financial and analytical platforms at scale.
 
 ## Core Engineering Focus
 
-**Backend Systems**  
-- Performance-aware architectures  
-- Explicit correctness & safety boundaries  
-- Latency-focused design in constrained environments  
-
-**Systems Performance**  
+- Performance-aware backend systems  
 - Rust/C++ acceleration via FFI  
-- Profiling-driven optimization  
-- Quantifying complexity vs. measurable gains  
-
-**Financial Software**  
-- Transaction analytics pipelines  
-- Deterministic computation systems  
-- Reliable data processing infrastructure  
-
-**Machine Learning Integration**  
-- ML as a strictly **bounded subsystem**  
-- Deterministic business logic retains final authority  
+- Deterministic financial computation  
+- ML systems with strict control boundaries  
 
 ---
 
@@ -66,22 +51,25 @@ FastAPI · Django · Axum (Rust) · Actix Web · Node.js / Express
 PostgreSQL · MySQL · MongoDB · **Redis** · MinIO  
 
 **Machine Learning**  
-PyTorch · scikit-learn · NumPy · Pandas · ONNX Runtime  
+PyTorch · scikit-learn · NumPy · Pandas · ONNX Runtime 
 
-**Native Extensions & ML Inference (FFI / Bindings)**  
-- **PyO3** — Rust ↔ Python extensions (performance hotspots, zero-copy NumPy/Pandas)  
-- **napi-rs** — Rust ↔ Node.js/TypeScript (safe NAPI bindings for JS ecosystem)  
-- **NAPI** — Core Node.js native addon protocol (C++/Rust interop with Node)  
-- **tch-rs** — Rust bindings to PyTorch/libtorch (native tensors, NN, training/inference in Rust)  
-- **onnxruntime** — Rust bindings to ONNX Runtime (cross-platform ONNX model inference)  
-- **opencv-rs** — Rust bindings to OpenCV (computer vision pipelines, face detection/embeddings)  
-- **CXX** · **bindgen** · **hnsw_rs** — Additional FFI bridges & approximate NN search  
+**Native Extensions & ML Systems (FFI / Bindings)**  
+
+- **PyO3** — Rust ↔ Python (performance-critical modules)  
+- **napi-rs / N-API** — Rust/C++ ↔ Node.js (native backend acceleration)  
+- **tch-rs / ONNX Runtime** — running ML inference in Rust  
+- **opencv-rs** — CV pipelines (face processing, embeddings)  
+
+Focus:
+- Eliminating Python/JS bottlenecks  
+- Measuring FFI overhead vs real gains  
+- Moving critical ML/CV paths to native execution  
 
 **Infrastructure**  
 Docker · Linux · Git · CI/CD · Render · Railway · GCP  
 
 **Other**  
-- GenAI API integration (OpenRouter, similar providers) — experience with structured prompting & usage limits (prior Taskflow prototype used it before credit exhaustion)
+GenAI API integration (LLM APIs, structured prompting, system-level usage constraints)
 
 ---
 
@@ -162,15 +150,6 @@ AI-assisted task management with clean separation between deterministic rules an
 - Scaling approximate nearest-neighbor search  
 - Maintaining deterministic control over ML outputs  
 - Evaluating complexity vs measurable performance gains  
-
----
-
-## Engineering Philosophy
-
-- Prefer **measured claims** over adjectives  
-- Optimize **only after profiling**  
-- Remove complexity when gains are marginal  
-- Keep deterministic systems in control of critical decisions  
 
 ---
 
