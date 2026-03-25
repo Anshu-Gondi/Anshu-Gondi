@@ -47,6 +47,9 @@ Python · Rust · C++ · C · TypeScript · SQL
 **Backend**  
 FastAPI · Django · Axum (Rust) · Actix Web · Node.js / Express  
 
+**Frontend**  
+React (JavaScript + TypeScript) · React Native · Angular  
+
 **Databases**  
 PostgreSQL · MySQL · MongoDB · **Redis** · MinIO  
 
