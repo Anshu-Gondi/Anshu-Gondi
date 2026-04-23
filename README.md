@@ -1,216 +1,111 @@
-# 👋 Hi, I'm Anshu Gondi
+# Anshu Gondi
 
-**Systems & Backend Developer** — performance, FFI-based optimization, and CPU-constrained environments.
+**Backend & systems engineer.** I build things that have to work on real hardware.
 
-🎓 B.Tech (1st Year) · India &nbsp;|&nbsp; 💼 Open to **internships**, **backend roles**, and **technical collaborations**
+B.Tech (1st year) · India · Open to internships, backend roles, technical collaboration
 
----
-
-## About Me
-
-I design backend systems that prioritize **correctness**, **performance**, and **measurable behavior** — especially in **CPU-constrained environments**.
-
-Low-resource hardware experience taught me to treat performance as an **engineering problem to be measured**, not assumed.
-
-**Workflow:**
-- Profiling before optimization
-- Clear boundaries between deterministic logic and ML subsystems
-- Rust/C++ only when benchmarks justify the added complexity
-
-```
-Build → Measure → Refactor → Re-measure
-```
-
-**Long-term goal:** Reliable financial and analytical platforms at scale.
-
-> **All projects are developed and benchmarked on the same machine:**
-> ```
-> Intel Celeron N4020 · 2 cores / 2 threads · 8 GB RAM · CPU-only inference
-> ```
-> Performance is not assumed — it is measured on constrained hardware from day one.
+📧 [agondi982@gmail.com](mailto:agondi982@gmail.com) · 📺 [youtube.com/@ag_youtube](https://www.youtube.com/@ag_youtube)
 
 ---
 
-## Core Engineering Focus
+## About
 
-- Performance-aware backend systems
-- Rust/C++ acceleration via FFI
-- Deterministic financial computation
-- ML systems with strict control boundaries
+Most backend systems are designed assuming fast hardware. I build under the opposite assumption — everything I ship is benchmarked on a dual-core Celeron with 8 GB RAM and no GPU. That constraint isn't a limitation I work around; it's the discipline I design with.
 
----
+My focus is on systems where correctness is non-negotiable and performance has to be earned: financial computation, identity matching at scale, and ML pipelines that run without cloud infrastructure.
 
-## Technical Stack
-
-**Languages**
-`Python` `Rust` `C++` `C` `TypeScript` `SQL`
-
-**Backend**
-`FastAPI` `Django` `Axum (Rust)` `Actix Web` `Node.js / Express`
-
-**Frontend**
-`React (JS + TS)` `React Native` `Angular`
-
-**Databases**
-`PostgreSQL` `MySQL` `MongoDB` `Redis` `MinIO`
-
-**Machine Learning**
-`PyTorch` `scikit-learn` `NumPy` `Pandas` `ONNX Runtime`
-
-**Native Extensions & FFI / Bindings**
-
-| Binding | Use |
-|---|---|
-| **PyO3** | Rust ↔ Python (performance-critical modules) |
-| **napi-rs / N-API** | Rust/C++ ↔ Node.js (native backend acceleration) |
-| **tch-rs / ONNX Runtime** | ML inference in Rust |
-| **opencv-rs** | CV pipelines (face processing, embeddings) |
-
-Focus: eliminating Python/JS bottlenecks · measuring FFI overhead vs real gains · moving critical ML/CV paths to native execution.
-
-**Infrastructure**
-`Docker` `Linux` `Git` `CI/CD` `Render` `Railway` `GCP`
-
-**Other**
-GenAI API integration (LLM APIs, structured prompting, system-level usage constraints)
+> **Intel Celeron N4020 · 2 cores · 8 GB RAM · CPU-only inference**  
+> Benchmarks on this machine, not a dev server.
 
 ---
 
-## Flagship Projects
+## What I focus on
+
+**Performance under constraint**  
+Profile first. Reach for Rust/C++ only when benchmarks justify the complexity cost.
+
+**Deterministic financial logic**  
+Numbers that compute the same way every time. LLMs handle intent, not arithmetic.
+
+**Controlled ML boundaries**  
+ML outputs are validated before they touch data. No black-box mutations.
+
+**FFI with real measurement**  
+PyO3, napi-rs — used where the numbers prove it, not assumed.
 
 ---
+
+## Projects
 
 ### 🏫 CampusVision
-**Real-Time Face-Based Attendance Infrastructure** · `In Development`
+**Face-based attendance system for real classrooms — deployable on low-cost hardware** · `In Development`
 
-Reliable CPU-only classroom attendance system combining computer vision, high-performance backend, and scalable identity search — deployable on low-cost hardware.
+**Problem**  
+Manual attendance in large classrooms is slow, error-prone, and frequently gamed. Existing automated systems require expensive cameras or cloud inference.
 
-**Architecture**
-- **Detection & Recognition:** YuNet (face detection) + ArcFace (embeddings)
-- **Performance Layer:** Rust-based embedding processing + HNSW approximate nearest-neighbor search
-- **Backend:** Axum (Rust ingestion APIs) + Django (auth/orchestration) + MinIO (object storage)
-- **Clients:** React web dashboard + React Native mobile
+**Solution**  
+CPU-only face detection (YuNet) + ArcFace embeddings with a Rust-accelerated HNSW index for sub-20ms identity lookup. Runs on the same commodity hardware schools already own.
 
-**Deployment Strategy**
-- Primary: webcam / mobile camera recognition
-- Audit: CCTV for verification trail
-- Scalability: location-aware indexing
+**Why it matters**  
+Accuracy and latency that make real-classroom deployment viable without a hardware budget. The system degrades gracefully — CCTV provides audit trails when live detection is uncertain.
 
 **Benchmarks**
 
-| Operation | Python | Rust | Speedup |
-|---|---|---|---|
+| Operation | Python | Rust | Gain |
+|-----------|--------|------|------|
 | Embedding inference | 35 ms | **12 ms** | **2.9×** |
-| HNSW search (1000 faces) | 50 ms | **18 ms** | **2.8×** |
+| HNSW search (1k faces) | 50 ms | **18 ms** | **2.8×** |
 
-**Current Focus**
-- Multi-frame recognition validation
-- Location-based face index architecture
-- Real-classroom pilot deployment
+**Stack:** `Axum` `Django` `Rust/PyO3` `HNSW` `ArcFace` `MinIO` `React Native`
 
 ---
 
 ### 💰 FinTally
-**Deterministic Personal Finance Analytics System**
+**Personal finance analytics — fully deterministic core, LLM used strictly for intent parsing** · `Stable + Active Dev`
 
-Transparent computation platform — no opaque AI automation. Core financial logic is fully deterministic; LLM is used only for intent parsing.
+**Problem**  
+Personal finance tools either over-automate (opaque AI decisions on your money) or under-deliver (dumb spreadsheets with no insight layer).
 
----
+**Solution**  
+Hard separation: the Rust aggregation engine owns all numbers. An LLM layer — running locally via llama.cpp — translates natural-language queries into validated intent objects. The engine executes them. The LLM never touches raw figures.
 
-#### `main` — Stable Release
-
-> Production-ready version. Deterministic aggregation engine with selective Rust/C++ acceleration.
-
-**Architecture**
-- **Backend:** Node.js (transaction ingestion) + Django (analytics engine)
-- **Performance Layer:** Rust aggregation modules + selective C++ acceleration
-- **ML Usage:** LLM only for intent parsing; all financial logic is deterministic
+**Why it matters**  
+You can audit every computation. LLM confidence below threshold falls back to deterministic rules automatically. Financial logic that behaves the same way regardless of what the model does.
 
 **Benchmarks**
 
-| Operation | Python | Rust | Speedup |
-|---|---|---|---|
+| Operation | Python | Rust | Gain |
+|-----------|--------|------|------|
 | Aggregation (10k transactions) | 1.2 s | **0.4 s** | **3.0×** |
 | Monthly summary | 0.8 s | **0.25 s** | **3.2×** |
 
----
-
-#### `dev/llm-analytics` — Active Development Branch
-
-> Extending FinTally with a richer LLM integration layer and a deeper analytics engine — while keeping the deterministic core untouched.
-
-**LLM Stack**
-
-| Component | Role |
-|---|---|
-| **FastAPI** | LLM service API — exposes intent endpoints to the main backend |
-| **llama.cpp** | CPU-optimized local LLM inference (no GPU, no cloud dependency) |
-| **PyO3** | Rust ↔ Python bridge — hot paths in the LLM pre/post processing offloaded to Rust |
-
-Running quantized models via llama.cpp on the Celeron N4020 — inference is measured, not assumed viable.
-
-**What's being added:**
-
-- **Structured LLM pipeline** — moving from single-shot intent parsing to a multi-step reasoning chain:
-  - Query classification → context injection → structured JSON output → deterministic execution
-  - LLM never touches raw numbers; it only emits validated intent objects consumed by the Rust engine
-  - PyO3 used to accelerate token pre-processing and schema validation at the Rust layer
-
-- **Enhanced analytics engine:**
-  - Spending pattern detection with configurable rule sets
-  - Anomaly flagging (statistical thresholds, not ML black-boxes)
-  - Multi-period trend analysis (MoM, YoY, rolling windows)
-  - Category inference with LLM-assisted tagging (human-overridable)
-
-- **LLM integration boundaries (strict):**
-  - LLM output is always schema-validated before entering the computation layer
-  - No LLM call can mutate financial records — read-only intent resolution only
-  - Fallback to deterministic rules if LLM confidence score is below threshold
-
-- **Observability additions:**
-  - Per-request LLM latency and token throughput tracking (tokens/sec on CPU)
-  - Token usage logging per intent type
-  - Comparison dashboards: LLM-assisted vs rule-only results
-
-**Design constraint being maintained:**
-```
-llama.cpp (FastAPI) = intent layer only        ← PyO3 bridges hot paths to Rust
-Rust engine         = source of truth for all numbers
-```
+**Stack:** `Node.js` `Django` `Rust/PyO3` `llama.cpp` `FastAPI` `PostgreSQL`
 
 ---
 
-## Experimental Projects
+## Experiments
 
-**📈 Revenue-AI**
-Financial forecasting & EDA platform testing time-series models under CPU-only constraints.
-Focus: model comparison, training efficiency, system performance profiling.
+**📈 Revenue-AI**  
+Financial forecasting testbed — comparing time-series models and profiling training efficiency under CPU-only constraints.
 
-**📂 Taskflow-Ngnode**
-AI-assisted task management with clean separation between deterministic rules and ML scoring systems.
-
----
-
-## Engineering Challenges Explored
-
-- CPU-efficient neural network inference
-- Measuring PyO3 / FFI boundary overhead
-- Scaling approximate nearest-neighbor search
-- Maintaining deterministic control over ML outputs
-- Evaluating complexity vs measurable performance gains
+**📂 Taskflow-Ngnode**  
+Task management with a clean boundary between deterministic scheduling rules and ML-assisted priority scoring.
 
 ---
 
-## Current Technical Priorities
+## Stack
 
-- Concurrency patterns in backend systems
-- Automated benchmarking pipelines
-- Production observability and system instrumentation
+**Languages**  
+`Python` `Rust` `C++` `TypeScript` `SQL`
 
----
+**Backend**  
+`FastAPI` `Django` `Axum` `Actix Web` `Node.js`
 
-📧 **Email:** [agondi982@gmail.com](mailto:agondi982@gmail.com)
-📺 **YouTube:** [youtube.com/@ag_youtube](https://www.youtube.com/@ag_youtube)
+**FFI / Native**  
+`PyO3` `napi-rs` `ONNX Runtime` `opencv-rs` `tch-rs`
+
+**Data / Infra**  
+`PostgreSQL` `Redis` `MinIO` `Docker` `GCP` `Linux`
 
 ---
 
