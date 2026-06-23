@@ -3,7 +3,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  Intel Celeron N4020 · 2 cores · 2 threads · 8 GB RAM                  │
+│  Intel Celeron N4020 · 2 cores · 2 threads · 8 GB RAM · ~4 years old   │
 │  CPU-only inference · No GPU · No cloud · No excuses                   │
 └─────────────────────────────────────────────────────────────┘
 ```
