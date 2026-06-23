@@ -1,123 +1,144 @@
+<!-- Header -->
+<div align="center">
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  Intel Celeron N4020 · 2 cores · 2 threads · 8 GB RAM                  │
+│  CPU-only inference · No GPU · No cloud · No excuses                   │
+└─────────────────────────────────────────────────────────────┘
+```
+
 # Anshu Gondi
 
-**Full-stack engineer with a systems depth.** I build end-to-end — from React UI to backend APIs to native performance layer — and I make it run on real hardware.
+**Full-stack engineer with systems depth.**  
+React to Rust — all the way down.
 
-B.Tech (1st year) · India · Open to internships, full-stack/backend roles, technical collaboration
+`B.Tech · 1st year · India` · Open to internships in full-stack, backend, and systems roles
 
-📧 [agondi982@gmail.com](mailto:agondi982@gmail.com) · 📺 [youtube.com/@ag_youtube](https://www.youtube.com/@ag_youtube)
+[![Email](https://img.shields.io/badge/agondi982@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:agondi982@gmail.com)
+[![YouTube](https://img.shields.io/badge/@ag__youtube-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://www.youtube.com/@ag_youtube)
 
----
-
-## About
-
-I ship complete products — frontend, backend, database, deployment, and where needed, native acceleration in Rust or C++. Most developers work within one layer; I build across all of them and care about how they connect.
-
-What makes this unusual: everything I build is benchmarked on a dual-core Celeron with 8 GB RAM and no GPU. That forces real engineering decisions at every layer — you can't paper over a bad backend with a fast machine.
-
-> **Intel Celeron N4020 · 2 cores · 8 GB RAM · CPU-only inference**  
-> Benchmarks on this machine, not a dev server.
+</div>
 
 ---
 
-## How I build
+## // about
 
-**End-to-end ownership**  
-React/Angular UI → Node/Django/FastAPI backend → PostgreSQL/Redis/MinIO data layer → Docker + GCP deployment. I ship the whole thing.
+I ship **complete products** — frontend, backend, database, deployment, and native acceleration in Rust & C++ where benchmarks justify it. Most developers work in one layer. I build across all of them and care deeply about how they connect and perform under real constraints.
 
-**Performance under constraint**  
-Profile first. Reach for Rust/C++ via FFI only when benchmarks justify the complexity cost.
-
-**Deterministic financial logic**  
-Numbers that compute the same way every time. LLMs handle intent, not arithmetic.
-
-**Controlled ML boundaries**  
-ML outputs are validated before they touch data. No black-box mutations.
+**What makes this unusual:** Everything I build is benchmarked and optimized on a dual-core Celeron N4020 with 8 GB RAM — CPU-only. That constraint isn't a footnote. It's load-bearing. It forces honest engineering decisions at every level and makes every performance number mean something real.
 
 ---
 
-## Projects
+## // how I build
+
+| Principle | Practice |
+|-----------|----------|
+| **End-to-end ownership** | React / React Native → FastAPI / Axum → PostgreSQL / Redis / MinIO → Docker + GCP |
+| **Performance under constraint** | Profile first. Rust + C++ via FFI for hot paths. Python only where it adds productivity without cost. |
+| **Deterministic financial logic** | Rust/C++ owns all numbers and calculations. LLMs handle intent only — never raw data. |
+| **Controlled ML boundaries** | ML outputs validated before touching core data. No black-box mutations. |
+
+---
+
+## // projects
 
 ### 🏫 CampusVision
-**Full-stack attendance platform — React Native client, Rust/Django backend, three-layer anti-fraud verification** · `In Development`
+> **Full-stack attendance platform with three-layer anti-fraud verification** · `In Development`
 
-**Problem**  
-Manual attendance is slow and easy to game — proxies, photos, and impersonation are common. Existing automated systems either require expensive hardware or have no fraud detection layer at all.
+**Problem:** Manual attendance is trivially gamed — proxies, printed photos, screen replays are all common. Existing hardware-based solutions are expensive. Most software solutions have one layer of defense, which means one layer to defeat.
 
-**Solution**  
-End-to-end system with a three-stage verification pipeline before attendance is ever marked:
+**Solution:** End-to-end system with a three-stage verification pipeline that must fully pass before attendance is marked:
 
-1. **Face recognition** — YuNet detection + ArcFace embeddings matched against a Rust-accelerated HNSW index. Identifies the person.
-2. **Liveness check via emotion** — Emotion-8-FerPlus model runs immediately after recognition. A static photo or screen replay produces flat/neutral affect; a real person in a live environment doesn't. Catches spoofing attempts that fool face recognition alone.
-3. **CCTV cross-verification** — The recognized identity is cross-checked against CCTV footage to confirm physical presence in the room. Someone who passed recognition and liveness remotely still can't mark attendance without being physically there.
+```
+Stage 1 → Face recognition
+          YuNet detection + SFace embeddings
+          matched against a Rust-accelerated HNSW index
 
-Only when all three stages pass does the backend mark attendance. Any stage failure is logged for manual review.
+Stage 2 → Liveness check via emotion
+          Emotion-8-FerPlus model detects static photos
+          and screen replays (flat/neutral affect signature)
 
-Full stack: React Native mobile client + React web dashboard → Axum (Rust) ingestion API → Django auth/orchestration → Rust-accelerated HNSW identity index → MinIO storage. Runs on commodity hardware, no GPU required.
+Stage 3 → CCTV cross-verification
+          Cross-checks identity against school CCTV
+          to confirm physical presence in the building
+```
 
-**Why it matters**  
-Most attendance systems stop at face recognition — that's one lock on the door. The emotion model catches spoofed media; CCTV catches physical proxies. Three layers together make fraud meaningfully harder without adding cost — CCTV infrastructure schools already have.
+**Architecture:** React Native mobile + React web dashboard → Rust (Axum) ingestion & orchestration API → C++ performance-critical components via FFI → Rust-accelerated HNSW index → MinIO storage. No GPU required.
 
-**Benchmarks**
+**Benchmarks** *(Celeron N4020 · 2 cores · 2 threads · 8 GB RAM · CPU-only)*
 
-| Operation | Python | Rust | Gain |
-|-----------|--------|------|------|
-| Embedding inference | 35 ms | **12 ms** | **2.9×** |
-| HNSW search (1k faces) | 50 ms | **18 ms** | **2.8×** |
+| Operation | Time | vs baseline |
+|-----------|------|-------------|
+| Embedding inference | **< 12 ms** | ~3× faster |
+| HNSW search (1k faces) | **< 18 ms** | ~2.8× faster |
 
-**Stack:** `React Native` `React` `Axum` `Django` `Rust/PyO3` `HNSW` `ArcFace` `Emotion-8-FerPlus` `ONNX Runtime` `MinIO` `Docker`
+**Stack:**
+`React Native` `React` `Axum (Rust)` `C++ (FFI)` `SFace` `HNSW` `ONNX Runtime` `MinIO` `Docker`
 
 ---
 
 ### 💰 FinTally
-**Full-stack finance platform — React frontend, Node/Django backend, Rust aggregation engine, local LLM** · `Stable + Active Dev`
+> **Full-stack finance platform — React frontend, FastAPI + Rust extensions (stable) / Pure Rust (dev)** · `Stable + Active Dev`
 
-**Problem**  
-Personal finance tools either over-automate (opaque AI decisions on your money) or under-deliver (dumb spreadsheets with no insight layer).
+**Problem:** Personal finance tools are either opaque (AI that auto-decides things for you) or shallow. You shouldn't have to trust a black box with your numbers.
 
-**Solution**  
-Complete product: React dashboard → Node.js ingestion → Django analytics → Rust aggregation engine → llama.cpp local LLM for intent parsing. Hard separation: the Rust engine owns all numbers. The LLM translates natural-language queries into validated intent objects. It never touches raw figures.
+**Solution:** Clean separation between deterministic calculations and intelligent intent parsing.
 
-**Why it matters**  
-You get the insight layer without sacrificing auditability. LLM confidence below threshold falls back to deterministic rules. Runs fully local — no cloud dependency, no GPU required.
+```
+Stable version:
+  React dashboard
+  → FastAPI backend + Rust extensions (PyO3) for high-performance aggregation
+  → Local llama.cpp for natural-language queries
+    (LLM produces validated intent objects only — never touches raw numbers)
 
-**Benchmarks**
+Dev version (Pure Rust):
+  Candle for ML components
+  → C++ FFI for the hottest numerical and aggregation paths
+  → Maximum performance and control on constrained hardware
+  → Fully local — no cloud or GPU dependency
+```
 
-| Operation | Python | Rust | Gain |
-|-----------|--------|------|------|
-| Aggregation (10k transactions) | 1.2 s | **0.4 s** | **3.0×** |
-| Monthly summary | 0.8 s | **0.25 s** | **3.2×** |
+**Benchmarks** *(Celeron N4020 · 2 cores · 2 threads · 8 GB RAM · CPU-only)*
 
-**Stack:** `React` `Node.js` `Django` `FastAPI` `Rust/PyO3` `llama.cpp` `PostgreSQL` `Docker`
+| Operation | Python | Rust / Rust+C++ | Gain |
+|-----------|--------|-----------------|------|
+| Aggregation (10k transactions) | 1.2 s | **0.04 s** | **30×** |
+| Monthly summary | 0.8 s | **0.025 s** | **32×** |
 
----
+**Stack:**
 
-## Experiments
-
-**📈 Revenue-AI**  
-Financial forecasting testbed — comparing time-series models and profiling training efficiency under CPU-only constraints.
-
-**📂 Taskflow-Ngnode**  
-AI-assisted task management with a clean boundary between deterministic scheduling rules and ML-assisted priority scoring.
-
----
-
-## Stack
-
-**Languages**  
-`Python` `Rust` `C++` `TypeScript` `JavaScript` `SQL`
-
-**Frontend**  
-`React` `React Native` `Angular` `TypeScript` `JavaScript`
-
-**Backend**  
-`FastAPI` `Django` `Axum` `Actix Web` `Node.js` `Express`
-
-**FFI / Native**  
-`PyO3` `napi-rs` `ONNX Runtime` `opencv-rs` `tch-rs`
-
-**Data / Infra**  
-`PostgreSQL` `Redis` `MinIO` `Docker` `GCP` `Linux`
+- **Stable:** `React` `FastAPI` `Rust (PyO3)` `llama.cpp` `PostgreSQL` `Docker`
+- **Dev:** `Rust` `Candle` `C++ (FFI)` `Axum` `Tokio`
 
 ---
 
-> *Build under constraints. Measure honestly. Refactor intentionally.*
+## // experiments
+
+**📈 Revenue-AI** — Financial forecasting testbed comparing time-series models under strict CPU-only constraints.
+
+**📂 Taskflow-Ngnode** — AI-assisted task management with explicit boundaries between deterministic rules and ML-assisted scoring.
+
+---
+
+## // stack
+
+```
+Languages      Rust · C++ · Python · TypeScript · JavaScript · SQL
+
+Frontend       React · React Native · Angular · TypeScript
+
+Backend        FastAPI · Axum · Actix Web · Node.js
+
+Native/Perf    PyO3 · C++ FFI · Candle · ONNX Runtime · HNSW · opencv-rs
+
+Data/Infra     PostgreSQL · Redis · MinIO · Docker · GCP · Linux
+```
+
+---
+
+<div align="center">
+
+*build under constraints. measure honestly. refactor intentionally.*
+
+</div>
